@@ -6,53 +6,54 @@
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: white;
       margin: 0;
-      padding: 0;
-      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
     }
 
     header {
       background-color: #c40000;
       color: white;
       padding: 30px;
+      text-align: center;
     }
 
-    h1 {
+    header h1 {
       margin: 0;
-      font-size: 50px;
+      font-size: 48px;
     }
 
-    h2 {
-      color: #c40000;
-      margin-top: 40px;
-    }
-
-    .info-box {
-      width: 80%;
+    .container {
+      width: 85%;
       margin: auto;
-      background-color: #f5f5f5;
-      padding: 20px;
-      border-radius: 15px;
       margin-top: 30px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
       text-align: left;
-      font-size: 18px;
+    }
+
+    .card h2 {
+      color: #c40000;
+      margin-top: 0;
     }
 
     ul {
-      list-style-type: none;
-      padding: 0;
+      padding-left: 20px;
     }
 
     li {
-      padding: 6px;
-      font-size: 18px;
+      margin: 6px 0;
+      font-size: 17px;
     }
 
     table {
-      width: 80%;
-      margin: auto;
+      width: 100%;
       border-collapse: collapse;
       margin-top: 15px;
     }
@@ -61,12 +62,11 @@
       background-color: #c40000;
       color: white;
       padding: 10px;
-      border: 1px solid black;
     }
 
     td {
       padding: 10px;
-      border: 1px solid black;
+      border: 1px solid #ddd;
     }
   </style>
 </head>
@@ -79,101 +79,114 @@
     <p>Allsvenskan – Sverige</p>
   </header>
 
-  <!-- INFO OM KLUBBEN -->
-  <div class="info-box">
-    <h2>Klubbinfo</h2>
-    <p><b>Grundad:</b> 1910</p>
-    <p><b>Arena:</b> Guldfågeln Arena</p>
-    <p><b>Tränare:</b> Toni Koskela</p>
+  <div class="container">
 
-    <p><b>SM-guld:</b> 1</p>
-    <p><b>Svenska Cupen-guld:</b> 3</p>
+    <!-- KLUBBINFO -->
+    <div class="card">
+      <h2>Klubbinfo</h2>
+      <p><b>Grundad:</b> 1910</p>
+      <p><b>Arena:</b> Guldfågeln Arena</p>
+      <p><b>Tränare:</b> Toni Koskela</p>
+
+      <p><b>SM-guld:</b> 1</p>
+      <p><b>Svenska Cupen-guld:</b> 3</p>
+    </div>
+
+    <!-- MÅLVAKTER -->
+    <div class="card">
+      <h2>Målvakter (2)</h2>
+      <ul>
+        <li>Samuel Brolin – Sverige</li>
+        <li>Jakob Kindberg – Sverige</li>
+      </ul>
+    </div>
+
+    <!-- FÖRSVARARE -->
+    <div class="card">
+      <h2>Försvarare (8)</h2>
+      <ul>
+        <li>Victor Larsson – Sverige</li>
+        <li>Sivert Øverby – Norge</li>
+        <li>Rony Jansson – Finland</li>
+        <li>Zakarias Råvik – Sverige</li>
+        <li>Sodiq Lawal – Nigeria</li>
+        <li>Arvin Davoudi-Kia – Sverige</li>
+        <li>Lars Saetra – Norge</li>
+        <li>Aboubacar Keita – USA</li>
+      </ul>
+    </div>
+
+    <!-- MITTFÄLTARE -->
+    <div class="card">
+      <h2>Mittfältare (6)</h2>
+      <ul>
+        <li>Melker Hallberg – Sverige</li>
+        <li>Nassef Chourak – Holland</li>
+        <li>Awaka Djoro – Elfenbenskusten</li>
+        <li>Carl Gustafsson – Sverige</li>
+        <li>Abdussalam Magashy – Nigeria</li>
+        <li>Robert Gojani – Sverige</li>
+      </ul>
+    </div>
+
+    <!-- ANFALLARE -->
+    <div class="card">
+      <h2>Anfallare (6)</h2>
+      <ul>
+        <li>Isaac Atanga – Ghana</li>
+        <li>Malcolm Stolt – Sverige</li>
+        <li>Anthony Olusanya – Finland</li>
+        <li>Charles Sagoe Jr – England</li>
+        <li>Abdi Sabriye – Sverige</li>
+        <li>Emeka Nnamani – Danmark</li>
+      </ul>
+    </div>
+
+    <!-- UTLÅNADE -->
+    <div class="card">
+      <h2>Utlånade (4)</h2>
+
+      <table>
+        <tr>
+          <th>Namn</th>
+          <th>Nation</th>
+          <th>Position</th>
+          <th>Utlånad till</th>
+        </tr>
+
+        <tr>
+          <td>Casper Andersson</td>
+          <td>Sverige</td>
+          <td>(skriv här)</td>
+          <td>(skriv klubb här)</td>
+        </tr>
+
+        <tr>
+          <td>Ville Nilsson</td>
+          <td>Sverige</td>
+          <td>(skriv här)</td>
+          <td>(skriv klubb här)</td>
+        </tr>
+
+        <tr>
+          <td>William Andersson</td>
+          <td>Sverige</td>
+          <td>(skriv här)</td>
+          <td>(skriv klubb här)</td>
+        </tr>
+
+        <tr>
+          <td>Wilmer Andersson</td>
+          <td>Sverige</td>
+          <td>(skriv här)</td>
+          <td>(skriv klubb här)</td>
+        </tr>
+      </table>
+    </div>
+
   </div>
-
-  <!-- TRUPPEN -->
-
-  <!-- MÅLVAKTER -->
-  <h2>Målvakter (2)</h2>
-  <ul>
-    <li>Samuel Brolin – Sverige</li>
-    <li>Jakob Kindberg – Sverige</li>
-  </ul>
-
-  <!-- FÖRSVARARE -->
-  <h2>Försvarare (8)</h2>
-  <ul>
-    <li>Victor Larsson – Sverige</li>
-    <li>Sivert Øverby – Norge</li>
-    <li>Rony Jansson – Finland</li>
-    <li>Zakarias Råvik – Sverige</li>
-    <li>Sodiq Lawal – Nigeria</li>
-    <li>Arvin Davoudi-Kia – Sverige</li>
-    <li>Lars Saetra – Norge</li>
-    <li>Aboubacar Keita – USA</li>
-  </ul>
-
-  <!-- MITTFÄLTARE -->
-  <h2>Mittfältare (6)</h2>
-  <ul>
-    <li>Melker Hallberg – Sverige</li>
-    <li>Nassef Chourak – Holland</li>
-    <li>Awaka Djoro – Elfenbenskusten</li>
-    <li>Carl Gustafsson – Sverige</li>
-    <li>Abdussalam Magashy – Nigeria</li>
-    <li>Robert Gojani – Sverige</li>
-  </ul>
-
-  <!-- ANFALLARE -->
-  <h2>Anfallare (6)</h2>
-  <ul>
-    <li>Isaac Atanga – Ghana</li>
-    <li>Malcolm Stolt – Sverige</li>
-    <li>Anthony Olusanya – Finland</li>
-    <li>Charles Sagoe Jr – England</li>
-    <li>Abdi Sabriye – Sverige</li>
-    <li>Emeka Nnamani – Danmark</li>
-  </ul>
-
-  <!-- UTLÅNADE -->
-  <h2>Utlånade (4)</h2>
-
-  <table>
-    <tr>
-      <th>Namn</th>
-      <th>Nation</th>
-      <th>Position</th>
-      <th>Utlånad till</th>
-    </tr>
-
-    <tr>
-      <td>Casper Andersson</td>
-      <td>Sverige</td>
-      <td>Målvakt</td>
-      <td>FK Karlskrona</td>
-    </tr>
-
-    <tr>
-      <td>Ville Nilsson</td>
-      <td>Sverige</td>
-      <td>Anfallare</td>
-      <td>FK Karlskrona</td>
-    </tr>
-
-    <tr>
-      <td>William Andersson</td>
-      <td>Sverige</td>
-      <td>Mittfältare</td>
-      <td>FK Karlskrona</td>
-    </tr>
-
-    <tr>
-      <td>Wilmer Andersson</td>
-      <td>Sverige</td>
-      <td>Mittfältare</td>
-      <td>FK Karlskrona</td>
-    </tr>
-  </table>
 
 </body>
 </html>
+
 
