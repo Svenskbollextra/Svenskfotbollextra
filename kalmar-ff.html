@@ -2,191 +2,188 @@
 <html lang="sv">
 <head>
   <meta charset="UTF-8">
-  <title>Kalmar FF</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalmar FF 2026 - SvenskBollExtra</title>
 
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #111;
     }
 
     header {
-      background-color: #c40000;
+      background-color: #b30000; /* Kalmar röd */
       color: white;
-      padding: 30px;
+      padding: 25px;
       text-align: center;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 48px;
+    nav {
+      background-color: #e60000;
+      padding: 12px;
+      text-align: center;
     }
 
-    .container {
-      width: 85%;
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 950px;
       margin: auto;
-      margin-top: 30px;
+      padding: 20px;
     }
 
-    .card {
-      background-color: white;
-      padding: 25px;
-      margin-bottom: 25px;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-      text-align: left;
-    }
-
-    .card h2 {
-      color: #c40000;
-      margin-top: 0;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin: 6px 0;
-      font-size: 17px;
+    h2 {
+      margin-top: 40px;
+      color: #b30000; /* röda rubriker */
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 15px;
+      margin-top: 10px;
+      background: white;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
     }
 
     th {
-      background-color: #c40000;
-      color: white;
-      padding: 10px;
+      background-color: #f0f0f0;
     }
 
-    td {
-      padding: 10px;
+    .info-box {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
       border: 1px solid #ddd;
+      margin-top: 20px;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <h1>Kalmar FF</h1>
-    <p>Allsvenskan – Sverige</p>
-  </header>
+<header>
+  <h1>Kalmar FF (Allsvenskan 2026)</h1>
+</header>
 
-  <div class="container">
+<nav>
+  <a href="index.html">Hem</a>
+  <a href="allsvenskan.html">Allsvenskan</a>
+</nav>
 
-    <!-- KLUBBINFO -->
-    <div class="card">
-      <h2>Klubbinfo</h2>
-      <p><b>Grundad:</b> 1910</p>
-      <p><b>Arena:</b> Guldfågeln Arena</p>
-      <p><b>Tränare:</b> Toni Koskela</p>
+<main>
 
-      <p><b>SM-guld:</b> 1</p>
-      <p><b>Svenska Cupen-guld:</b> 3</p>
-    </div>
-
-    <!-- MÅLVAKTER -->
-    <div class="card">
-      <h2>Målvakter (2)</h2>
-      <ul>
-        <li>Samuel Brolin – Sverige</li>
-        <li>Jakob Kindberg – Sverige</li>
-      </ul>
-    </div>
-
-    <!-- FÖRSVARARE -->
-    <div class="card">
-      <h2>Försvarare (8)</h2>
-      <ul>
-        <li>Victor Larsson – Sverige</li>
-        <li>Sivert Øverby – Norge</li>
-        <li>Rony Jansson – Finland</li>
-        <li>Zakarias Råvik – Sverige</li>
-        <li>Sodiq Lawal – Nigeria</li>
-        <li>Arvin Davoudi-Kia – Sverige</li>
-        <li>Lars Saetra – Norge</li>
-        <li>Aboubacar Keita – USA</li>
-      </ul>
-    </div>
-
-    <!-- MITTFÄLTARE -->
-    <div class="card">
-      <h2>Mittfältare (6)</h2>
-      <ul>
-        <li>Melker Hallberg – Sverige</li>
-        <li>Nassef Chourak – Holland</li>
-        <li>Awaka Djoro – Elfenbenskusten</li>
-        <li>Carl Gustafsson – Sverige</li>
-        <li>Abdussalam Magashy – Nigeria</li>
-        <li>Robert Gojani – Sverige</li>
-      </ul>
-    </div>
-
-    <!-- ANFALLARE -->
-    <div class="card">
-      <h2>Anfallare (6)</h2>
-      <ul>
-        <li>Isaac Atanga – Ghana</li>
-        <li>Malcolm Stolt – Sverige</li>
-        <li>Anthony Olusanya – Finland</li>
-        <li>Charles Sagoe Jr – England</li>
-        <li>Abdi Sabriye – Sverige</li>
-        <li>Emeka Nnamani – Danmark</li>
-      </ul>
-    </div>
-
-    <!-- UTLÅNADE -->
-    <div class="card">
-      <h2>Utlånade (4)</h2>
-
-      <table>
-        <tr>
-          <th>Namn</th>
-          <th>Nation</th>
-          <th>Position</th>
-          <th>Utlånad till</th>
-        </tr>
-
-        <tr>
-          <td>Casper Andersson</td>
-          <td>Sverige</td>
-          <td>(skriv här)</td>
-          <td>(skriv klubb här)</td>
-        </tr>
-
-        <tr>
-          <td>Ville Nilsson</td>
-          <td>Sverige</td>
-          <td>(skriv här)</td>
-          <td>(skriv klubb här)</td>
-        </tr>
-
-        <tr>
-          <td>William Andersson</td>
-          <td>Sverige</td>
-          <td>(skriv här)</td>
-          <td>(skriv klubb här)</td>
-        </tr>
-
-        <tr>
-          <td>Wilmer Andersson</td>
-          <td>Sverige</td>
-          <td>(skriv här)</td>
-          <td>(skriv klubb här)</td>
-        </tr>
-      </table>
-    </div>
-
+  <div class="info-box">
+    <p><strong>Grundad:</strong> 1910</p>
+    <p><strong>Arena:</strong> Guldfågeln Arena</p>
+    <p><strong>Tränare:</strong> Toni Koskela</p>
+    <p><strong>SM-guld:</strong> 1</p>
+    <p><strong>Svenska Cupen:</strong> 3</p>
   </div>
+
+  <!-- MÅLVAKTER (2) -->
+  <h2>Målvakter</h2>
+  <table>
+    <tr><th>Namn</th><th>Land</th></tr>
+    <tr><td>Samuel Brolin</td><td>Sverige</td></tr>
+    <tr><td>Jakob Kindberg</td><td>Sverige</td></tr>
+  </table>
+
+  <!-- FÖRSVARARE (8) -->
+  <h2>Försvarare</h2>
+  <table>
+    <tr><th>Namn</th><th>Land</th></tr>
+    <tr><td>Victor Larsson</td><td>Sverige</td></tr>
+    <tr><td>Sivert Øverby</td><td>Norge</td></tr>
+    <tr><td>Rony Jansson</td><td>Finland</td></tr>
+    <tr><td>Zakarias Råvik</td><td>Sverige</td></tr>
+    <tr><td>Sodiq Lawal</td><td>Nigeria</td></tr>
+    <tr><td>Arvin Davoudi-Kia</td><td>Sverige</td></tr>
+    <tr><td>Lars Saetra</td><td>Norge</td></tr>
+    <tr><td>Aboubacar Keita</td><td>USA</td></tr>
+  </table>
+
+  <!-- MITTFÄLTARE (6) -->
+  <h2>Mittfältare</h2>
+  <table>
+    <tr><th>Namn</th><th>Land</th></tr>
+    <tr><td>Melker Hallberg</td><td>Sverige</td></tr>
+    <tr><td>Nassef Chourak</td><td>Holland</td></tr>
+    <tr><td>Awaka Djoro</td><td>Elfenbenskusten</td></tr>
+    <tr><td>Carl Gustafsson</td><td>Sverige</td></tr>
+    <tr><td>Abdussalam Magashy</td><td>Nigeria</td></tr>
+    <tr><td>Robert Gojani</td><td>Sverige</td></tr>
+  </table>
+
+  <!-- ANFALLARE (6) -->
+  <h2>Anfallare</h2>
+  <table>
+    <tr><th>Namn</th><th>Land</th></tr>
+    <tr><td>Isaac Atanga</td><td>Ghana</td></tr>
+    <tr><td>Malcolm Stolt</td><td>Sverige</td></tr>
+    <tr><td>Anthony Olusanya</td><td>Finland</td></tr>
+    <tr><td>Charles Sagoe Jr</td><td>England</td></tr>
+    <tr><td>Abdi Sabriye</td><td>Sverige</td></tr>
+    <tr><td>Emeka Nnamani</td><td>Danmark</td></tr>
+  </table>
+
+  <!-- UTLÅNADE (4) -->
+  <h2>Utlånade</h2>
+  <table>
+    <tr>
+      <th>Namn</th>
+      <th>Land</th>
+      <th>Position</th>
+      <th>Utlånad till</th>
+    </tr>
+
+    <tr>
+      <td>Casper Andersson</td>
+      <td>Sverige</td>
+      <td>Målvakt</td>
+      <td>FK Karlskrona</td>
+    </tr>
+
+    <tr>
+      <td>Ville Nilsson</td>
+      <td>Sverige</td>
+      <td>Anfallare</td>
+      <td>FK Karlskrona</td>
+    </tr>
+
+    <tr>
+      <td>William Andersson</td>
+      <td>Sverige</td>
+      <td>Mittfältare</td>
+      <td>FK Karlskrona</td>
+    </tr>
+
+    <tr>
+      <td>Wilmer Andersson</td>
+      <td>Sverige</td>
+      <td>Mittfältare</td>
+      <td>FK Karlskrona</td>
+    </tr>
+
+  </table>
+
+</main>
 
 </body>
 </html>
-
-
