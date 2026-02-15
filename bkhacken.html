@@ -15,21 +15,21 @@
     }
 
     header {
-      background-color: #f7d400; /* Häcken gul */
-      color: black;
+      /* GAIS-layout men Häcken-färger: gul -> svart */
+      background: linear-gradient(to right, #f7d400, black);
+      color: white;
       padding: 25px;
       text-align: center;
-      font-weight: bold;
     }
 
     nav {
-      background-color: #000000; /* svart */
+      background-color: #000000; /* Svart */
       padding: 12px;
       text-align: center;
     }
 
     nav a {
-      color: #f7d400;
+      color: #f7d400; /* Gul text */
       text-decoration: none;
       font-weight: bold;
       margin: 0 15px;
@@ -47,8 +47,8 @@
 
     h2 {
       margin-top: 40px;
-      color: #000000;
-      border-left: 8px solid #f7d400;
+      color: #000;
+      border-left: 6px solid #f7d400;
       padding-left: 10px;
     }
 
@@ -73,7 +73,7 @@
       background: white;
       padding: 15px;
       border-radius: 10px;
-      border: 2px solid #f7d400;
+      border: 1px solid #f7d400;
       margin-top: 20px;
     }
   </style>
@@ -101,57 +101,57 @@
     <p><strong>Svenska Cupen:</strong> 4</p>
   </div>
 
-  <!-- MÅLVAKTER (2) -->
+  <!-- MÅLVAKTER -->
   <h2>Målvakter</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Andreas Linde</td><td>Sverige</td></tr>
-    <tr><td>Etrit Berisha</td><td>Albanien</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Andreas Linde</td><td>Sverige</td><td class="birth">1993-07-24</td><td class="age"></td></tr>
+    <tr><td>Etrit Berisha</td><td>Albanien</td><td class="birth">1989-03-10</td><td class="age"></td></tr>
   </table>
 
-  <!-- FÖRSVARARE (10) -->
+  <!-- FÖRSVARARE -->
   <h2>Försvarare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Johan Hammar</td><td>Sverige</td></tr>
-    <tr><td>Brice Wembangomo</td><td>Norge</td></tr>
-    <tr><td>Leo Väisänen</td><td>Finland</td></tr>
-    <tr><td>Julius Lindberg</td><td>Sverige</td></tr>
-    <tr><td>Ben Engdahl</td><td>Sverige</td></tr>
-    <tr><td>Adam Lundkvist</td><td>Sverige</td></tr>
-    <tr><td>Filip Helander</td><td>Sverige</td></tr>
-    <tr><td>Olle Samuelsson</td><td>Sverige</td></tr>
-    <tr><td>Filip Öhman</td><td>Sverige</td></tr>
-    <tr><td>Harry Hilvenius</td><td>Sverige</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Johan Hammar</td><td>Sverige</td><td class="birth">1994-02-22</td><td class="age"></td></tr>
+    <tr><td>Brice Wembangomo</td><td>Norge</td><td class="birth">1996-12-18</td><td class="age"></td></tr>
+    <tr><td>Leo Väisänen</td><td>Finland</td><td class="birth">1997-07-23</td><td class="age"></td></tr>
+    <tr><td>Julius Lindberg</td><td>Sverige</td><td class="birth">1999-01-04</td><td class="age"></td></tr>
+    <tr><td>Ben Engdahl</td><td>Sverige</td><td class="birth">2003-09-17</td><td class="age"></td></tr>
+    <tr><td>Adam Lundkvist</td><td>Sverige</td><td class="birth">1994-03-20</td><td class="age"></td></tr>
+    <tr><td>Filip Helander</td><td>Sverige</td><td class="birth">1993-04-22</td><td class="age"></td></tr>
+    <tr><td>Olle Samuelsson</td><td>Sverige</td><td class="birth">2004-05-16</td><td class="age"></td></tr>
+    <tr><td>Filip Öhman</td><td>Sverige</td><td class="birth">2008-01-26</td><td class="age"></td></tr>
+    <tr><td>Harry Hilvenius</td><td>Sverige</td><td class="birth">2007-10-06</td><td class="age"></td></tr>
   </table>
 
-  <!-- MITTFÄLTARE (7) -->
+  <!-- MITTFÄLTARE -->
   <h2>Mittfältare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Sanders Ngabo</td><td>Danmark</td></tr>
-    <tr><td>Silas Andersen</td><td>Danmark</td></tr>
-    <tr><td>Mikkel Rygaard</td><td>Danmark</td></tr>
-    <tr><td>Pontus Dahbo</td><td>Sverige</td></tr>
-    <tr><td>Abdoulaye Doumbia</td><td>Elfenbenskusten</td></tr>
-    <tr><td>Malte Ljungkull</td><td>Sverige</td></tr>
-    <tr><td>Moustapha Mouhamadou Mbengue</td><td>Senegal</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Sanders Ngabo</td><td>Danmark</td><td class="birth">2004-07-04</td><td class="age"></td></tr>
+    <tr><td>Silas Andersen</td><td>Danmark</td><td class="birth">2004-06-13</td><td class="age"></td></tr>
+    <tr><td>Mikkel Rygaard</td><td>Danmark</td><td class="birth">1990-12-25</td><td class="age"></td></tr>
+    <tr><td>Pontus Dahbo</td><td>Sverige</td><td class="birth">2005-10-11</td><td class="age"></td></tr>
+    <tr><td>Abdoulaye Doumbia</td><td>Elfenbenskusten</td><td class="birth">2007-10-27</td><td class="age"></td></tr>
+    <tr><td>Malte Ljungkull</td><td>Sverige</td><td class="birth">2007-06-04</td><td class="age"></td></tr>
+    <tr><td>Moustapha Mouhamadou Mbengue</td><td>Senegal</td><td class="birth">2007-01-01</td><td class="age"></td></tr>
   </table>
 
-  <!-- ANFALLARE (7) -->
+  <!-- ANFALLARE -->
   <h2>Anfallare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Gustav Lindgren</td><td>Sverige</td></tr>
-    <tr><td>Danilo Al-Saed</td><td>Sverige</td></tr>
-    <tr><td>Adrian Svanbäck</td><td>Finland</td></tr>
-    <tr><td>Amor Layouni</td><td>Sverige</td></tr>
-    <tr><td>Sabri Kondo</td><td>Tanzania</td></tr>
-    <tr><td>Christ Wawa</td><td>Elfenbenskusten</td></tr>
-    <tr><td>Severin Nioule</td><td>Elfenbenskusten</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Gustav Lindgren</td><td>Sverige</td><td class="birth">2001-08-16</td><td class="age"></td></tr>
+    <tr><td>Danilo Al-Saed</td><td>Sverige</td><td class="birth">1999-02-24</td><td class="age"></td></tr>
+    <tr><td>Adrian Svanbäck</td><td>Finland</td><td class="birth">2004-06-08</td><td class="age"></td></tr>
+    <tr><td>Amor Layouni</td><td>Sverige</td><td class="birth">1992-10-03</td><td class="age"></td></tr>
+    <tr><td>Sabri Kondo</td><td>Tanzania</td><td class="birth">2006-07-11</td><td class="age"></td></tr>
+    <tr><td>Christ Wawa</td><td>Elfenbenskusten</td><td class="birth">2007-06-09</td><td class="age"></td></tr>
+    <tr><td>Severin Nioule</td><td>Elfenbenskusten</td><td class="birth">2005-03-03</td><td class="age"></td></tr>
   </table>
 
-  <!-- UTLÅNADE (4) -->
+  <!-- UTLÅNADE -->
   <h2>Utlånade spelare</h2>
   <table>
     <tr>
@@ -159,16 +159,38 @@
       <th>Position</th>
       <th>Land</th>
       <th>Utlånad till</th>
+      <th>Född</th>
+      <th>Ålder</th>
     </tr>
-
-    <tr><td>Johannes Engvall</td><td>Försvarare</td><td>Sverige</td><td>Norrby IF</td></tr>
-    <tr><td>Marius Lode</td><td>Försvarare</td><td>Norge</td><td>Brisbane Roar FC(Köpoption)</td></tr>
-    <tr><td>Nikola Zecevic</td><td>Försvarare</td><td>Serbien</td><td>FK Zeleznicar Pancevo(Köpoption)</td></tr>
-    <tr><td>Srdjan Hrstic</td><td>Anfallare</td><td>Serbien</td><td>SCR Altach(Köpoption)</td></tr>
-
+    <tr><td>Johannes Engvall</td><td>Försvarare</td><td>Sverige</td><td>Norrby IF</td><td class="birth">2005-08-18</td><td class="age"></td></tr>
+    <tr><td>Marius Lode</td><td>Försvarare</td><td>Norge</td><td>Brisbane Roar FC(Köpoption)</td><td class="birth">1993-03-11</td><td class="age"></td></tr>
+    <tr><td>Nikola Zecevic</td><td>Försvarare</td><td>Serbien</td><td>FK Zeleznicar Pancevo(Köpoption)</td><td class="birth">2004-06-16</td><td class="age"></td></tr>
+    <tr><td>Srdjan Hrstic</td><td>Anfallare</td><td>Serbien</td><td>SCR Altach(Köpoption)</td><td class="birth">2003-07-18</td><td class="age"></td></tr>
   </table>
 
 </main>
+
+<!-- AUTOMATISK ÅLDER -->
+<script>
+function calculateAge(birthDate) {
+  if (birthDate.trim() === "") return "";
+  const today = new Date();
+  const birth = new Date(birthDate);
+  let age = today.getFullYear() - birth.getFullYear();
+  const month = today.getMonth() - birth.getMonth();
+  if (month < 0 || (month === 0 && today.getDate() < birth.getDate())) age--;
+  return age;
+}
+
+document.querySelectorAll("table tr").forEach(row => {
+  const birthCell = row.querySelector(".birth");
+  const ageCell = row.querySelector(".age");
+  if (birthCell && ageCell) {
+    const birthDate = birthCell.textContent;
+    ageCell.textContent = calculateAge(birthDate);
+  }
+});
+</script>
 
 </body>
 </html>
