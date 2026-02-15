@@ -8,27 +8,28 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #ffffff;
+      background-color: #f9f9f9;
       margin: 0;
       padding: 0;
       color: #111;
     }
 
     header {
-      background-color: #d91f26; /* Degerfors röd */
-      color: white;
+      /* Degerfors-färger: röd -> vit */
+      background: linear-gradient(to right, #d91f26, white);
+      color: black;
       padding: 25px;
       text-align: center;
     }
 
     nav {
-      background-color: #ffffff; /* vit bakgrund */
+      background-color: #000000;
       padding: 12px;
       text-align: center;
     }
 
     nav a {
-      color: #d91f26; /* röd text */
+      color: white;
       text-decoration: none;
       font-weight: bold;
       margin: 0 15px;
@@ -46,7 +47,9 @@
 
     h2 {
       margin-top: 40px;
-      color: #d91f26; /* röd text */
+      color: #d91f26;
+      border-left: 6px solid #d91f26;
+      padding-left: 10px;
     }
 
     table {
@@ -70,7 +73,7 @@
       background: white;
       padding: 15px;
       border-radius: 10px;
-      border: 1px solid #ddd;
+      border: 1px solid #d91f26;
       margin-top: 20px;
     }
   </style>
@@ -97,54 +100,83 @@
     <p><strong>Svenska Cupen:</strong> 1</p>
   </div>
 
-  <!-- MÅLVAKTER (3) -->
+  <!-- MÅLVAKTER -->
   <h2>Målvakter</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Wille Jakobsson</td><td>Sverige</td></tr>
-    <tr><td>Rasmus Forsell</td><td>Sverige</td></tr>
-    <tr><td>Matvei Igonen</td><td>Estland</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Wille Jakobsson</td><td>Sverige</td><td class="birth">2002-01-07</td><td class="age"></td></tr>
+    <tr><td>Rasmus Forsell</td><td>Sverige</td><td class="birth">2002-04-20</td><td class="age"></td></tr>
+    <tr><td>Matvei Igonen</td><td>Estland</td><td class="birth">1996-10-02</td><td class="age"></td></tr>
   </table>
 
-  <!-- FÖRSVARARE (10) -->
+  <!-- FÖRSVARARE -->
   <h2>Försvarare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Mamadouba Diaby</td><td>Guinea</td></tr>
-    <tr><td>Juhani Pikkarainen</td><td>Finland</td></tr>
-    <tr><td>Daniel Sundgren</td><td>Sverige</td></tr>
-    <tr><td>Sebastian Ohlsson</td><td>Sverige</td></tr>
-    <tr><td>Erik Lindell</td><td>Sverige</td></tr>
-    <tr><td>Nasiru Moro</td><td>Ghana</td></tr>
-    <tr><td>Sebastian Ohlsson</td><td>Sverige</td></tr>
-    <tr><td>Alexander Hedén Lindskog</td><td>Sverige</td></tr>
-    <tr><td>Philippe Ndinga</td><td>Kongo</td></tr>
-    <tr><td>Jesús Hernández</td><td>Spanien</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Mamadouba Diaby</td><td>Guinea</td><td class="birth">1997-02-16</td><td class="age"></td></tr>
+    <tr><td>Juhani Pikkarainen</td><td>Finland</td><td class="birth">1998-07-30</td><td class="age"></td></tr>
+    <tr><td>Daniel Sundgren</td><td>Sverige</td><td class="birth">1990-11-22</td><td class="age"></td></tr>
+    <tr><td>Sebastian Ohlsson</td><td>Sverige</td><td class="birth">1992-12-31</td><td class="age"></td></tr>
+    <tr><td>Erik Lindell</td><td>Sverige</td><td class="birth">1996-02-14</td><td class="age"></td></tr>
+    <tr><td>Nasiru Moro</td><td>Ghana</td><td class="birth">1996-09-24</td><td class="age"></td></tr>
+    <tr><td>Sebastian Ohlsson</td><td>Sverige</td><td class="birth">1993-05-26</td><td class="age"></td></tr>
+    <tr><td>Alexander Hedén Lindskog</td><td>Sverige</td><td class="birth">2004-01-18</td><td class="age"></td></tr>
+    <tr><td>Philippe Ndinga</td><td>Kongo</td><td class="birth">2005-06-03</td><td class="age"></td></tr>
+    <tr><td>Jesús Hernández</td><td>Spanien</td><td class="birth">2003-12-29</td><td class="age"></td></tr>
   </table>
 
-  <!-- MITTFÄLTARE (7) -->
+  <!-- MITTFÄLTARE -->
   <h2>Mittfältare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Kazper Karlsson</td><td>Sverige</td></tr>
-    <tr><td>Nahom Girmai Netabay</td><td>Sverige</td></tr>
-    <tr><td>Marcus Rafferty</td><td>Sverige</td></tr>
-    <tr><td>Yiriyon Gideon</td><td>Ghana</td></tr>
-    <tr><td>Bilal Hussein</td><td>Sverige</td></tr>
-    <tr><td>Elias Barsoum</td><td>Sverige</td></tr>
-    <tr><td>Alexander Lindgren</td><td>Sverige</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Kazper Karlsson(Lån,köpoption)</td><td>Sverige</td><td class="birth">2005-03-21</td><td class="age"></td></tr>
+    <tr><td>Nahom Girmai Netabay</td><td>Sverige</td><td class="birth">1994-08-28</td><td class="age"></td></tr>
+    <tr><td>Marcus Rafferty</td><td>Sverige</td><td class="birth">2004-10-01</td><td class="age"></td></tr>
+    <tr><td>Yiriyon Gideon(Lån,köpoption)</td><td>Ghana</td><td class="birth">2007-06-07</td><td class="age"></td></tr>
+    <tr><td>Bilal Hussein</td><td>Sverige</td><td class="birth">2000-04-22</td><td class="age"></td></tr>
+    <tr><td>Elias Barsoum</td><td>Sverige</td><td class="birth">2002-07-19</td><td class="age"></td></tr>
+    <tr><td>Alexander Lindgren</td><td>Sverige</td><td class="birth">2009-09-22</td><td class="age"></td></tr>
   </table>
 
-  <!-- ANFALLARE (3) -->
+  <!-- ANFALLARE -->
   <h2>Anfallare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Arman Taranis</td><td>Danmark</td></tr>
-    <tr><td>Dijan Vukojevic</td><td>Sverige</td></tr>
-    <tr><td>Ziyad Salifu</td><td>Ghana</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Arman Taranis</td><td>Danmark</td><td class="birth">2001-07-30</td><td class="age"></td></tr>
+    <tr><td>Dijan Vukojevic</td><td>Sverige</td><td class="birth">1995-09-12</td><td class="age"></td></tr>
+    <tr><td>Ziyad Salifu</td><td>Ghana</td><td class="birth">2006-06-20</td><td class="age"></td></tr>
+    <tr><td>Olle Leonardsson</td><td>Sverige</td><td class="birth">2007-03-21</td><td class="age"></td></tr>
   </table>
 
 </main>
+
+<!-- AUTOMATISK ÅLDER -->
+<script>
+function calculateAge(birthDate) {
+  if (birthDate.trim() === "") return "";
+  const today = new Date();
+  const birth = new Date(birthDate);
+
+  let age = today.getFullYear() - birth.getFullYear();
+  const month = today.getMonth() - birth.getMonth();
+
+  if (month < 0 || (month === 0 && today.getDate() < birth.getDate())) {
+    age--;
+  }
+
+  return age;
+}
+
+document.querySelectorAll("table tr").forEach(row => {
+  const birthCell = row.querySelector(".birth");
+  const ageCell = row.querySelector(".age");
+
+  if (birthCell && ageCell) {
+    const birthDate = birthCell.textContent;
+    ageCell.textContent = calculateAge(birthDate);
+  }
+});
+</script>
 
 </body>
 </html>
