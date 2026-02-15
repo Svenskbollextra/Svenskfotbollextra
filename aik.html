@@ -15,14 +15,15 @@
     }
 
     header {
-      background-color: black;
-      color: gold;
+      /* GAIS-style men med AIK-färger: guld -> svart */
+      background: linear-gradient(to right, gold, black);
+      color: white;
       padding: 25px;
       text-align: center;
     }
 
     nav {
-      background-color: #222;
+      background-color: #000000; /* Svart likt GAIS */
       padding: 12px;
       text-align: center;
     }
@@ -46,7 +47,9 @@
 
     h2 {
       margin-top: 40px;
-      color: black;
+      color: #333; /* liknande GAIS */
+      border-left: 6px solid black;
+      padding-left: 10px;
     }
 
     table {
@@ -97,64 +100,64 @@
     <p><strong>Svenska Cupen:</strong> 8</p>
   </div>
 
-  <!-- MÅLVAKTER (2) -->
+  <!-- MÅLVAKTER -->
   <h2>Målvakter</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Kristoffer Nordfeldt</td><td>Sverige</td></tr>
-    <tr><td>Kalle Joelsson</td><td>Sverige</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Kristoffer Nordfeldt</td><td>Sverige</td><td class="birth">1989-06-23</td><td class="age"></td></tr>
+    <tr><td>Kalle Joelsson</td><td>Sverige</td><td class="birth">1998-03-21</td><td class="age"></td></tr>
   </table>
 
-  <!-- FÖRSVARARE (9) -->
+  <!-- FÖRSVARARE -->
   <h2>Försvarare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Eskil Edh</td><td>Norge</td></tr>
-    <tr><td>Sotirios Papagiannopoulos</td><td>Sverige</td></tr>
-    <tr><td>Charlie Pavey</td><td>Sverige</td></tr>
-    <tr><td>Fredrik Nissen</td><td>Sverige</td></tr>
-    <tr><td>Mads Tychosen</td><td>Danmark</td></tr>
-    <tr><td>Ibrahim Cissé</td><td>Elfenbenskusten</td></tr>
-    <tr><td>Filip Benkovic</td><td>Kroatien</td></tr>
-    <tr><td>Wilmer Olofson</td><td>Sverige</td></tr>
-    <tr><td>Ahmad Faqa</td><td>Sverige</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Eskil Edh</td><td>Norge</td><td class="birth">2002-08-04</td><td class="age"></td></tr>
+    <tr><td>Sotirios Papagiannopoulos</td><td>Sverige</td><td class="birth">1990-09-05</td><td class="age"></td></tr>
+    <tr><td>Charlie Pavey</td><td>Sverige</td><td class="birth">2008-06-07</td><td class="age"></td></tr>
+    <tr><td>Fredrik Nissen</td><td>Sverige</td><td class="birth">2005-03-28</td><td class="age"></td></tr>
+    <tr><td>Mads Tychosen</td><td>Danmark</td><td class="birth">1997-06-27</td><td class="age"></td></tr>
+    <tr><td>Ibrahim Cissé</td><td>Elfenbenskusten</td><td class="birth">1999-01-11</td><td class="age"></td></tr>
+    <tr><td>Wilmer Olofson</td><td>Sverige</td><td class="birth">2005-09-16</td><td class="age"></td></tr>
+    <tr><td>Ahmad Faqa</td><td>Sverige</td><td class="birth">2003-01-10</td><td class="age"></td></tr>
   </table>
 
-  <!-- MITTFÄLTARE (15) -->
+  <!-- MITTFÄLTARE -->
   <h2>Mittfältare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Martin Ellingsen</td><td>Norge</td></tr>
-    <tr><td>Amel Mujanic</td><td>Sverige</td></tr>
-    <tr><td>Johan Hove</td><td>Norge</td></tr>
-    <tr><td>Bersant Celina</td><td>Kosovo</td></tr>
-    <tr><td>Dino Besirovic</td><td>Bosnien</td></tr>
-    <tr><td>Stanley Wilson</td><td>Kenya</td></tr>
-    <tr><td>Andreas Redkin</td><td>Sverige</td></tr>
-    <tr><td>Linus Järeteg</td><td>Sverige</td></tr>
-    <tr><td>Aron Csongvai</td><td>Ungern</td></tr>
-    <tr><td>Zadok Yohanna</td><td>Nigeria</td></tr>
-    <tr><td>Viktor Andersson</td><td>Sverige</td></tr>
-    <tr><td>Taha Ayari</td><td>Sverige</td></tr>
-    <tr><td>Yannick Geiger</td><td>Sverige</td></tr>
-    <tr><td>Axel Kouame</td><td>Elfenbenskusten</td></tr>
-    <tr><td>Mohamed Shilla</td><td>Tanzania</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Martin Ellingsen</td><td>Norge</td><td class="birth">1995-05-04</td><td class="age"></td></tr>
+    <tr><td>Amel Mujanic</td><td>Sverige</td><td class="birth">2001-04-01</td><td class="age"></td></tr>
+    <tr><td>Johan Hove</td><td>Norge</td><td class="birth">2000-09-07</td><td class="age"></td></tr>
+    <tr><td>Bersant Celina</td><td>Kosovo</td><td class="birth">1996-09-09</td><td class="age"></td></tr>
+    <tr><td>Abdihakim Ali</td><td>Sverige</td><td class="birth">2002-01-22</td><td class="age"></td></tr>
+    <tr><td>Dino Besirovic</td><td>Bosnien</td><td class="birth">1994-01-31</td><td class="age"></td></tr>
+    <tr><td>Stanley Wilson</td><td>Kenya</td><td class="birth">2006-08-21</td><td class="age"></td></tr>
+    <tr><td>Andreas Redkin</td><td>Sverige</td><td class="birth">2007-01-19</td><td class="age"></td></tr>
+    <tr><td>Linus Järeteg</td><td>Sverige</td><td class="birth">2007-01-20</td><td class="age"></td></tr>
+    <tr><td>Aron Csongvai</td><td>Ungern</td><td class="birth">2000-10-31</td><td class="age"></td></tr>
+    <tr><td>Zadok Yohanna</td><td>Nigeria</td><td class="birth">2007-06-29</td><td class="age"></td></tr>
+    <tr><td>Viktor Andersson</td><td>Sverige</td><td class="birth">2004-10-22</td><td class="age"></td></tr>
+    <tr><td>Taha Ayari</td><td>Sverige</td><td class="birth">2005-05-10</td><td class="age"></td></tr>
+    <tr><td>Yannick Geiger</td><td>Sverige</td><td class="birth">2007-06-23</td><td class="age"></td></tr>
+    <tr><td>Axel Kouame</td><td>Elfenbenskusten</td><td class="birth">2003-10-14</td><td class="age"></td></tr>
+    <tr><td>Mohamed Shilla</td><td>Tanzania</td><td class="birth">2008-01-25</td><td class="age"></td></tr>
   </table>
 
-  <!-- ANFALLARE (7) -->
+  <!-- ANFALLARE -->
   <h2>Anfallare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Sixten Gustafsson</td><td>Sverige</td></tr>
-    <tr><td>Erik Flataker</td><td>Norge</td></tr>
-    <tr><td>Adrian Helm</td><td>Sverige</td></tr>
-    <tr><td>Kevin Filling</td><td>Sverige</td></tr>
-    <tr><td>Emmanuel Gono</td><td>Liberia</td></tr>
-    <tr><td>Henry Meja</td><td>Kenya</td></tr>
-    <tr><td>Nikolay Staykov</td><td>Sverige</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Sixten Gustafsson</td><td>Sverige</td><td class="birth">2007-02-05</td><td class="age"></td></tr>
+    <tr><td>Erik Flataker</td><td>Norge</td><td class="birth">2004-12-26</td><td class="age"></td></tr>
+    <tr><td>Adrian Helm</td><td>Sverige</td><td class="birth">2005-09-27</td><td class="age"></td></tr>
+    <tr><td>Kevin Filling</td><td>Sverige</td><td class="birth">2008-11-30</td><td class="age"></td></tr>
+    <tr><td>Emmanuel Gono</td><td>Liberia</td><td class="birth">2005-10-29</td><td class="age"></td></tr>
+    <tr><td>Henry Meja</td><td>Kenya</td><td class="birth">2001-12-21</td><td class="age"></td></tr>
+    <tr><td>Nikolay Staykov</td><td>Sverige</td><td class="birth">2007-02-23</td><td class="age"></td></tr>
   </table>
 
-  <!-- UTLÅNADE (4) -->
+  <!-- UTLÅNADE -->
   <h2>Utlånade spelare</h2>
   <table>
     <tr>
@@ -162,17 +165,38 @@
       <th>Position</th>
       <th>Land</th>
       <th>Utlånad till</th>
+      <th>Född</th>
+      <th>Ålder</th>
     </tr>
-
-    <tr><td>Kazper Karlsson</td><td>Mittfältare</td><td>Sverige</td><td>Degerfors(Köpoption)</td></tr>
-    <tr><td>Aaron Rydell</td><td>Anfallare</td><td>Sverige</td><td>Karlbergs BK</td></tr>
-    <tr><td>Andronikos Kakoullis</td><td>Anfallare</td><td>Cypern</td><td>Aris Limmassol FC(Köpoption)</td></tr>
-    <tr><td>Jere Uronen</td><td>Försvarare</td><td>Finland</td><td>Atromitos(Köpoption)</td></tr>
+    <tr><td>Kazper Karlsson</td><td>Mittfältare</td><td>Sverige</td><td>Degerfors(Köpoption)</td><td class="birth">2005-03-21</td><td class="age"></td></tr>
+    <tr><td>Aaron Rydell</td><td>Anfallare</td><td>Sverige</td><td>Karlbergs BK</td><td class="birth">2006-10-14</td><td class="age"></td></tr>
+    <tr><td>Andronikos Kakoullis</td><td>Anfallare</td><td>Cypern</td><td>Aris Limmassol FC(Köpoption)</td><td class="birth">2001-05-03</td><td class="age"></td></tr>
+    <tr><td>Jere Uronen</td><td>Försvarare</td><td>Finland</td><td>Atromitos(Köpoption)</td><td class="birth">1994-07-13</td><td class="age"></td></tr>
   </table>
 
 </main>
 
+<!-- AUTOMATISK ÅLDER -->
+<script>
+function calculateAge(birthDate) {
+  if (birthDate.trim() === "") return "";
+  const today = new Date();
+  const birth = new Date(birthDate);
+  let age = today.getFullYear() - birth.getFullYear();
+  const month = today.getMonth() - birth.getMonth();
+  if (month < 0 || (month === 0 && today.getDate() < birth.getDate())) age--;
+  return age;
+}
+
+document.querySelectorAll("table tr").forEach(row => {
+  const birthCell = row.querySelector(".birth");
+  const ageCell = row.querySelector(".age");
+  if (birthCell && ageCell) {
+    const birthDate = birthCell.textContent;
+    ageCell.textContent = calculateAge(birthDate);
+  }
+});
+</script>
+
 </body>
 </html>
-
-
