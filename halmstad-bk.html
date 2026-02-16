@@ -46,6 +46,15 @@ main {
   padding: 20px;
 }
 
+/* INFO-BOX SOM GAIS */
+.info-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #003366;
+  margin-top: 20px;
+}
+
 /* RUBRIKER MED VÄNSTERKANT */
 h2 {
   margin-top: 40px;
@@ -54,7 +63,7 @@ h2 {
   padding-left: 10px;
 }
 
-/* TABELLSTIL */
+/* TABELLSTIL MED GRADIENT PER RAD */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -72,13 +81,19 @@ th {
   background-color: #f0f0f0;
 }
 
-/* INFO-BOX */
-.info-box {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  border: 2px solid #003366;
-  margin-top: 20px;
+tr td:first-child {
+  font-weight: bold;
+}
+
+/* GRADIENT PÅ VARJE RAD */
+tr:nth-child(even):not(:first-child) td {
+  background: linear-gradient(to right, #001f4d, white);
+  color: black;
+}
+
+tr:nth-child(odd):not(:first-child) td {
+  background: linear-gradient(to right, #003366, white);
+  color: black;
 }
 </style>
 </head>
