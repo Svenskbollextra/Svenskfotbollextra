@@ -15,14 +15,14 @@
     }
 
     header {
-      background: linear-gradient(to right, #0072bc, #001d3d); /* Ljusblå -> Mörkblå */
+      background: linear-gradient(to right, #0072bc, #001d3d);
       color: yellow;
       padding: 25px;
       text-align: center;
     }
 
     nav {
-      background-color: #001d3d; /* Mörkblå */
+      background-color: #001d3d;
       padding: 12px;
       text-align: center;
     }
@@ -46,7 +46,9 @@
 
     h2 {
       margin-top: 40px;
-      color: #0072bc; /* Ljusblå */
+      color: #0072bc;
+      border-left: 6px solid #001d3d;
+      padding-left: 10px;
     }
 
     table {
@@ -89,6 +91,7 @@
 
 <main>
 
+  <!-- KLUBBINFO -->
   <div class="info-box">
     <p><strong>Grundad:</strong> 1891</p>
     <p><strong>Arena:</strong> 3Arena</p>
@@ -97,84 +100,96 @@
     <p><strong>Svenska Cupen:</strong> 5</p>
   </div>
 
-  <!-- MÅLVAKTER (4) -->
+  <!-- MÅLVAKTER -->
   <h2>Målvakter</h2>
   <table>
-    <tr>
-      <th>Namn</th>
-      <th>Land</th>
-    </tr>
-    <tr><td>Malkolm Nilsson Säfqvist</td><td>Sverige</td></tr>
-    <tr><td>Jacob Rinne</td><td>Sverige</td></tr>
-    <tr><td>Max Croon</td><td>Sverige</td></tr>
-    <tr><td>Filip Manojlovic</td><td>Serbien</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Malkolm Nilsson Säfqvist</td><td>Sverige</td><td class="birth">1993-08-03</td><td class="age"></td></tr>
+    <tr><td>Jacob Rinne</td><td>Sverige</td><td class="birth">1993-06-20</td><td class="age"></td></tr>
+    <tr><td>Max Croon</td><td>Sverige</td><td class="birth">2005-11-26</td><td class="age"></td></tr>
+    <tr><td>Filip Manojlovic</td><td>Serbien</td><td class="birth">1996-04-25</td><td class="age"></td></tr>
   </table>
 
-  <!-- FÖRSVARARE (7) -->
+  <!-- FÖRSVARARE -->
   <h2>Försvarare</h2>
   <table>
-    <tr>
-      <th>Namn</th>
-      <th>Land</th>
-    </tr>
-    <tr><td>Piotr Johansson</td><td>Sverige</td></tr>
-    <tr><td>Jacob Une</td><td>Sverige</td></tr>
-    <tr><td>Miro Tenho</td><td>Finland</td></tr>
-    <tr><td>Adam Ståhl</td><td>Sverige</td></tr>
-    <tr><td>Mikael Marqués</td><td>Sverige</td></tr>
-    <tr><td>Leon Hien</td><td>Sverige</td></tr>
-    <tr><td>Max Larsson</td><td>Sverige</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Piotr Johansson</td><td>Sverige</td><td class="birth">1995-02-28</td><td class="age"></td></tr>
+    <tr><td>Jacob Une</td><td>Sverige</td><td class="birth">1994-04-08</td><td class="age"></td></tr>
+    <tr><td>Miro Tenho</td><td>Finland</td><td class="birth">1995-04-02</td><td class="age"></td></tr>
+    <tr><td>Adam Ståhl</td><td>Sverige</td><td class="birth">1994-10-08</td><td class="age"></td></tr>
+    <tr><td>Mikael Marqués</td><td>Sverige</td><td class="birth">2001-09-08</td><td class="age"></td></tr>
+    <tr><td>Leon Hien</td><td>Sverige</td><td class="birth">2001-07-31</td><td class="age"></td></tr>
+    <tr><td>Max Larsson</td><td>Sverige</td><td class="birth">2003-07-07</td><td class="age"></td></tr>
   </table>
 
-  <!-- MITTFÄLTARE (8) -->
+  <!-- MITTFÄLTARE -->
   <h2>Mittfältare</h2>
   <table>
-    <tr>
-      <th>Namn</th>
-      <th>Land</th>
-    </tr>
-    <tr><td>Peter Langhoff</td><td>Danmark</td></tr>
-    <tr><td>Daniel Stensson</td><td>Sverige</td></tr>
-    <tr><td>Hampus Finndell</td><td>Sverige</td></tr>
-    <tr><td>Bo Hegland</td><td>Norge</td></tr>
-    <tr><td>Mikael Anderson</td><td>Island</td></tr>
-    <tr><td>Matias Siltanen</td><td>Finland</td></tr>
-    <tr><td>Patric Åslund</td><td>Sverige</td></tr>
-    <tr><td>Gideon Granström</td><td>Sverige</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Peter Langhoff</td><td>Danmark</td><td class="birth">2004-01-09</td><td class="age"></td></tr>
+    <tr><td>Daniel Stensson</td><td>Sverige</td><td class="birth">1997-03-24</td><td class="age"></td></tr>
+    <tr><td>Hampus Finndell</td><td>Sverige</td><td class="birth">2000-06-06</td><td class="age"></td></tr>
+    <tr><td>Bo Hegland</td><td>Norge</td><td class="birth">2004-06-18</td><td class="age"></td></tr>
+    <tr><td>Mikael Anderson</td><td>Island</td><td class="birth">1998-07-01</td><td class="age"></td></tr>
+    <tr><td>Matias Siltanen</td><td>Finland</td><td class="birth">2007-03-29</td><td class="age"></td></tr>
+    <tr><td>Patric Åslund</td><td>Sverige</td><td class="birth">2002-08-01</td><td class="age"></td></tr>
+    <tr><td>Gideon Granström</td><td>Sverige</td><td class="birth">2005-08-08</td><td class="age"></td></tr>
   </table>
 
-  <!-- ANFALLARE (9) -->
+  <!-- ANFALLARE -->
   <h2>Anfallare</h2>
   <table>
-    <tr>
-      <th>Namn</th>
-      <th>Land</th>
-    </tr>
-    <tr><td>Kristian Lien</td><td>Norge</td></tr>
-    <tr><td>Oskar Fallenius</td><td>Sverige</td></tr>
-    <tr><td>Jeppe Okkels</td><td>Danmark</td></tr>
-    <tr><td>Nino Zugelj</td><td>Slovenien</td></tr>
-    <tr><td>Kalipha Jawla</td><td>Sverige</td></tr>
-    <tr><td>Santeri Haarala</td><td>Finland</td></tr>
-    <tr><td>Ahmed Saeed</td><td>Sverige</td></tr>
-    <tr><td>Alexander Andersson</td><td>Sverige</td></tr>
-    <tr><td>Christopher Sliwo</td><td>Sverige</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Kristian Lien</td><td>Norge</td><td class="birth">2001-09-30</td><td class="age"></td></tr>
+    <tr><td>Oskar Fallenius</td><td>Sverige</td><td class="birth">2001-11-01</td><td class="age"></td></tr>
+    <tr><td>Jeppe Okkels</td><td>Danmark</td><td class="birth">1999-07-27</td><td class="age"></td></tr>
+    <tr><td>Nino Zugelj</td><td>Slovenien</td><td class="birth">2000-05-23</td><td class="age"></td></tr>
+    <tr><td>Kalipha Jawla</td><td>Sverige</td><td class="birth">2006-04-11</td><td class="age"></td></tr>
+    <tr><td>Santeri Haarala</td><td>Finland</td><td class="birth">1999-12-17</td><td class="age"></td></tr>
+    <tr><td>Ahmed Saeed</td><td>Sverige</td><td class="birth">2008-04-22</td><td class="age"></td></tr>
+    <tr><td>Alexander Andersson</td><td>Sverige</td><td class="birth">2010-04-25</td><td class="age"></td></tr>
+    <tr><td>Christopher Sliwo</td><td>Sverige</td><td class="birth">2007-08-07</td><td class="age"></td></tr>
   </table>
 
-  <!-- UTLÅNADE (2) -->
+  <!-- UTLÅNADE -->
   <h2>Utlånade spelare</h2>
   <table>
-    <tr>
-      <th>Namn</th>
-      <th>Position</th>
-      <th>Land</th>
-      <th>Utlånad till</th>
-    </tr>
-    <tr><td>Zakaria Sawo</td><td>Anfallare</td><td>Sverige</td><td>AEL Limassol(Köpoption)</td></tr>
-    <tr><td>Viktor Bergh</td><td>Försvarare</td><td>Sverige</td><td>Hansa Rostock(Köpoption)</td></tr>
+    <tr><th>Namn</th><th>Position</th><th>Land</th><th>Utlånad till</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Zakaria Sawo</td><td>Anfallare</td><td>Sverige</td><td>AEL Limassol(Köpoption)</td><td class="birth">2000-01-11</td><td class="age"></td></tr>
+    <tr><td>Viktor Bergh</td><td>Försvarare</td><td>Sverige</td><td>Hansa Rostock(Köpoption)</td><td class="birth">1999-07-26</td><td class="age"></td></tr>
   </table>
 
 </main>
+
+<!-- AUTOMATISK ÅLDER -->
+<script>
+function calculateAge(birthDate) {
+  if (birthDate.trim() === "") return "";
+
+  const today = new Date();
+  const birth = new Date(birthDate);
+
+  let age = today.getFullYear() - birth.getFullYear();
+  const month = today.getMonth() - birth.getMonth();
+
+  if (month < 0 || (month === 0 && today.getDate() < birth.getDate())) {
+    age--;
+  }
+
+  return age;
+}
+
+document.querySelectorAll("table tr").forEach(row => {
+  const birthCell = row.querySelector(".birth");
+  const ageCell = row.querySelector(".age");
+
+  if (birthCell && ageCell) {
+    const birthDate = birthCell.textContent;
+    ageCell.textContent = calculateAge(birthDate);
+  }
+});
+</script>
 
 </body>
 </html>
