@@ -15,7 +15,7 @@
     }
 
     header {
-      background: linear-gradient(to right, #007a33, #ffffff); /* Hammarby gradient */
+      background: linear-gradient(to right, #007a33, #005522); /* Hammarby-grön gradient */
       color: white;
       padding: 25px;
       text-align: center;
@@ -46,8 +46,8 @@
 
     h2 {
       margin-top: 40px;
-      color: #005522; /* Hammarby-rubrikfärg */
-      border-left: 6px solid black;
+      color: #007a33;
+      border-left: 6px solid #005522;
       padding-left: 10px;
     }
 
@@ -65,16 +65,6 @@
     }
 
     th {
-      background-color: #f0f0f0;
-    }
-
-    tr td.name-cell {
-      background: linear-gradient(to right, #007a33, #ffffff);
-      color: black;
-      font-weight: bold;
-    }
-
-    tr:hover {
       background-color: #f0f0f0;
     }
 
@@ -101,80 +91,105 @@
 
 <main>
 
-<div class="info-box">
-  <p><strong>Grundad:</strong> 1915</p>
-  <p><strong>Arena:</strong> 3Arena</p>
-  <p><strong>Tränare:</strong> Kalle Karlsson</p>
-  <p><strong>SM-guld:</strong> 1</p>
-  <p><strong>Svenska Cupen:</strong> 1</p>
-</div>
+  <div class="info-box">
+    <p><strong>Grundad:</strong> 1915</p>
+    <p><strong>Arena:</strong> 3Arena</p>
+    <p><strong>Tränare:</strong> Kalle Karlsson</p>
+    <p><strong>SM-guld:</strong> 1</p>
+    <p><strong>Svenska Cupen:</strong> 1</p>
+  </div>
 
-<!-- MÅLVAKTER -->
-<h2>Målvakter</h2>
-<table>
-<tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
-<tr><td class="name-cell">Warner Hahn</td><td>Surinam</td><td class="birth">1992-06-15</td><td class="age"></td></tr>
-<tr><td class="name-cell">Felix Jakobsson</td><td>Sverige</td><td class="birth">1999-09-16</td><td class="age"></td></tr>
-</table>
+  <!-- MÅLVAKTER -->
+  <h2>Målvakter</h2>
+  <table>
+    <tr>
+      <th>Namn</th>
+      <th>Land</th>
+      <th>Född</th>
+      <th>Ålder</th>
+    </tr>
+    <tr><td>Warner Hahn</td><td>Surinam</td><td class="birth">1992-06-15</td><td class="age"></td></tr>
+    <tr><td>Felix Jakobsson</td><td>Sverige</td><td class="birth">1999-09-16</td><td class="age"></td></tr>
+  </table>
 
-<!-- FÖRSVARARE -->
-<h2>Försvarare</h2>
-<table>
-<tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
-<tr><td class="name-cell">Hampus Skoglund</td><td>Sverige</td><td class="birth">2004-03-01</td><td class="age"></td></tr>
-<tr><td class="name-cell">Frederik Winther</td><td>Danmark</td><td class="birth">2001-01-04</td><td class="age"></td></tr>
-<tr><td class="name-cell">Victor Eriksson</td><td>Sverige</td><td class="birth">2000-09-17</td><td class="age"></td></tr>
-<tr><td class="name-cell">Jonathan Karlsson</td><td>Sverige</td><td class="birth">2003-11-27</td><td class="age"></td></tr>
-<tr><td class="name-cell">Noah Persson</td><td>Sverige</td><td class="birth">2003-07-16</td><td class="age"></td></tr>
-<tr><td class="name-cell">Ibrahima Fofana</td><td>Guinea</td><td class="birth">2002-08-15</td><td class="age"></td></tr>
-<tr><td class="name-cell">Björn Hedlöf</td><td>Sverige</td><td class="birth">2008-07-14</td><td class="age"></td></tr>
-<tr><td class="name-cell">Emil Reyes Rigö</td><td>Sverige</td><td class="birth">2008-04-21</td><td class="age"></td></tr>
-<tr><td class="name-cell">Essayas Lwampindy-Bofua</td><td>Sverige</td><td class="birth">2005-08-10</td><td class="age"></td></tr>
-<tr><td class="name-cell">Matheo Elviersson Sica</td><td>Sverige</td><td class="birth">2008-01-07</td><td class="age"></td></tr>
-<tr><td class="name-cell">Oscar Steinke Brånby</td><td>Sverige</td><td class="birth">2006-02-07</td><td class="age"></td></tr>
-<tr><td class="name-cell">Raymond Dwomoh</td><td>Ghana</td><td class="birth">2006-07-03</td><td class="age"></td></tr>
-<tr><td class="name-cell">Yusei Shima</td><td>Japan</td><td class="birth">2007-05-31</td><td class="age"></td></tr>
-</table>
+  <!-- FÖRSVARARE -->
+  <h2>Försvarare</h2>
+  <table>
+    <tr>
+      <th>Namn</th>
+      <th>Land</th>
+      <th>Född</th>
+      <th>Ålder</th>
+    </tr>
+    <tr><td>Hampus Skoglund</td><td>Sverige</td><td class="birth">2004-03-01</td><td class="age"></td></tr>
+    <tr><td>Frederik Winther</td><td>Danmark</td><td class="birth">2001-01-04</td><td class="age"></td></tr>
+    <tr><td>Victor Eriksson</td><td>Sverige</td><td class="birth">2000-09-17</td><td class="age"></td></tr>
+    <tr><td>Jonathan Karlsson</td><td>Sverige</td><td class="birth">2003-11-27</td><td class="age"></td></tr>
+    <tr><td>Noah Persson</td><td>Sverige</td><td class="birth">2003-07-16</td><td class="age"></td></tr>
+    <tr><td>Ibrahima Fofana</td><td>Guinea</td><td class="birth">2002-08-15</td><td class="age"></td></tr>
+    <tr><td>Björn Hedlöf</td><td>Sverige</td><td class="birth">2008-07-14</td><td class="age"></td></tr>
+    <tr><td>Emil Reyes Rigö</td><td>Sverige</td><td class="birth">2008-04-21</td><td class="age"></td></tr>
+    <tr><td>Essayas Lwampindy-Bofua</td><td>Sverige</td><td class="birth">2005-08-10</td><td class="age"></td></tr>
+    <tr><td>Matheo Elviersson Sica</td><td>Sverige</td><td class="birth">2008-01-07</td><td class="age"></td></tr>
+    <tr><td>Oscar Steinke Brånby</td><td>Sverige</td><td class="birth">2006-02-07</td><td class="age"></td></tr>
+    <tr><td>Raymond Dwomoh</td><td>Ghana</td><td class="birth">2006-07-03</td><td class="age"></td></tr>
+    <tr><td>Yusei Shima</td><td>Japan</td><td class="birth">2007-05-31</td><td class="age"></td></tr>
+  </table>
 
-<!-- MITTFÄLTARE -->
-<h2>Mittfältare</h2>
-<table>
-<tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
-<tr><td class="name-cell">Tesfaldet Tekie</td><td>Sverige</td><td class="birth">1997-06-04</td><td class="age"></td></tr>
-<tr><td class="name-cell">Markus Karlsson</td><td>Sverige</td><td class="birth">2004-01-20</td><td class="age"></td></tr>
-<tr><td class="name-cell">Oscar Johansson Schellhas</td><td>Sverige</td><td class="birth">1995-05-06</td><td class="age"></td></tr>
-<tr><td class="name-cell">Dennis Collander</td><td>Sverige</td><td class="birth">2002-05-09</td><td class="age"></td></tr>
-<tr><td class="name-cell">Nahir Besara</td><td>Sverige</td><td class="birth">1991-02-25</td><td class="age"></td></tr>
-<tr><td class="name-cell">Frank Junior Adjei</td><td>Ghana</td><td class="birth">2004-03-20</td><td class="age"></td></tr>
-<tr><td class="name-cell">Wilson Lindberg Uhrström</td><td>Sverige</td><td class="birth">2006-03-23</td><td class="age"></td></tr>
-<tr><td class="name-cell">Sourou Koné</td><td>Elfenbenskusten</td><td class="birth">2008-01-01</td><td class="age"></td></tr>
-</table>
+  <!-- MITTFÄLTARE -->
+  <h2>Mittfältare</h2>
+  <table>
+    <tr>
+      <th>Namn</th>
+      <th>Land</th>
+      <th>Född</th>
+      <th>Ålder</th>
+    </tr>
+    <tr><td>Tesfaldet Tekie</td><td>Sverige</td><td class="birth">1997-06-04</td><td class="age"></td></tr>
+    <tr><td>Markus Karlsson</td><td>Sverige</td><td class="birth">2004-01-20</td><td class="age"></td></tr>
+    <tr><td>Oscar Johansson Schellhas</td><td>Sverige</td><td class="birth">1995-05-06</td><td class="age"></td></tr>
+    <tr><td>Dennis Collander</td><td>Sverige</td><td class="birth">2002-05-09</td><td class="age"></td></tr>
+    <tr><td>Nahir Besara</td><td>Sverige</td><td class="birth">1991-02-25</td><td class="age"></td></tr>
+    <tr><td>Frank Junior Adjei</td><td>Ghana</td><td class="birth">2004-03-20</td><td class="age"></td></tr>
+    <tr><td>Wilson Lindberg Uhrström</td><td>Sverige</td><td class="birth">2006-03-23</td><td class="age"></td></tr>
+    <tr><td>Sourou Koné</td><td>Elfenbenskusten</td><td class="birth">2008-01-01</td><td class="age"></td></tr>
+  </table>
 
-<!-- ANFALLARE -->
-<h2>Anfallare</h2>
-<table>
-<tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
-<tr><td class="name-cell">Paulos Abraham</td><td>Sverige</td><td class="birth">2002-07-16</td><td class="age"></td></tr>
-<tr><td class="name-cell">Nikola Vasic</td><td>Sverige</td><td class="birth">1991-10-04</td><td class="age"></td></tr>
-<tr><td class="name-cell">Obilor Okeke</td><td>Norge</td><td class="birth">2002-07-23</td><td class="age"></td></tr>
-<tr><td class="name-cell">Montader Madjed</td><td>Sverige</td><td class="birth">2005-04-07</td><td class="age"></td></tr>
-<tr><td class="name-cell">Elohim Kaboré</td><td>Elfenbenskusten</td><td class="birth">2006-12-20</td><td class="age"></td></tr>
-<tr><td class="name-cell">Bernard Acheampong</td><td>Ghana</td><td class="birth">2007-01-31</td><td class="age"></td></tr>
-<tr><td class="name-cell">Keyano Marrah</td><td>Sverige</td><td class="birth">2006-09-15</td><td class="age"></td></tr>
-<tr><td class="name-cell">Suwaibou Kebbeh</td><td>Gambia</td><td class="birth">2007-02-17</td><td class="age"></td></tr>
-</table>
+  <!-- ANFALLARE -->
+  <h2>Anfallare</h2>
+  <table>
+    <tr>
+      <th>Namn</th>
+      <th>Land</th>
+      <th>Född</th>
+      <th>Ålder</th>
+    </tr>
+    <tr><td>Paulos Abraham</td><td>Sverige</td><td class="birth">2002-07-16</td><td class="age"></td></tr>
+    <tr><td>Nikola Vasic</td><td>Sverige</td><td class="birth">1991-10-04</td><td class="age"></td></tr>
+    <tr><td>Obilor Okeke</td><td>Norge</td><td class="birth">2002-07-23</td><td class="age"></td></tr>
+    <tr><td>Montader Madjed</td><td>Sverige</td><td class="birth">2005-04-07</td><td class="age"></td></tr>
+    <tr><td>Elohim Kaboré</td><td>Elfenbenskusten</td><td class="birth">2006-12-20</td><td class="age"></td></tr>
+    <tr><td>Bernard Acheampong</td><td>Ghana</td><td class="birth">2007-01-31</td><td class="age"></td></tr>
+    <tr><td>Keyano Marrah</td><td>Sverige</td><td class="birth">2006-09-15</td><td class="age"></td></tr>
+    <tr><td>Suwaibou Kebbeh</td><td>Gambia</td><td class="birth">2007-02-17</td><td class="age"></td></tr>
+  </table>
 
-<!-- UTLÅNADE -->
-<h2>Utlånade spelare</h2>
-<table>
-<tr>
-<th>Namn</th><th>Position</th><th>Land</th><th>Utlånad till</th><th>Född</th><th>Ålder</th>
-</tr>
-<tr><td class="name-cell">Elton Fischerström Opancar</td><td>Målvakt</td><td>Sverige</td><td>Htff</td><td class="birth">2007-01-02</td><td class="age"></td></tr>
-<tr><td class="name-cell">Milian Öberg</td><td>Anfallare</td><td>Sverige</td><td>Htff</td><td class="birth">2008-08-09</td><td class="age"></td></tr>
-<tr><td class="name-cell">Saah Moses Jr</td><td>Mittfältare</td><td>Liberia</td><td>Htff</td><td class="birth">2007-07-10</td><td class="age"></td></tr>
-<tr><td class="name-cell">Viktor Djukanovic</td><td>Anfallare</td><td>Montenegro</td><td>DAC 1904(Köpoption)</td><td class="birth">2004-01-29</td><td class="age"></td></tr>
-</table>
+  <!-- UTLÅNADE -->
+  <h2>Utlånade spelare</h2>
+  <table>
+    <tr>
+      <th>Namn</th>
+      <th>Position</th>
+      <th>Land</th>
+      <th>Utlånad till</th>
+      <th>Född</th>
+      <th>Ålder</th>
+    </tr>
+    <tr><td>Elton Fischerström Opancar</td><td>Målvakt</td><td>Sverige</td><td>Htff</td><td class="birth">2007-01-02</td><td class="age"></td></tr>
+    <tr><td>Milian Öberg</td><td>Anfallare</td><td>Sverige</td><td>Htff</td><td class="birth">2008-08-09</td><td class="age"></td></tr>
+    <tr><td>Saah Moses Jr</td><td>Mittfältare</td><td>Liberia</td><td>Htff</td><td class="birth">2007-07-10</td><td class="age"></td></tr>
+    <tr><td>Viktor Djukanovic</td><td>Anfallare</td><td>Montenegro</td><td>DAC 1904(Köpoption)</td><td class="birth">2004-01-29</td><td class="age"></td></tr>
+  </table>
 
 </main>
 
