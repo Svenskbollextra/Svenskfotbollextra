@@ -15,14 +15,14 @@
     }
 
     header {
-      background-color: #002b5c; /* IFK mörkblå */
+      background: linear-gradient(to right, #002b5c, #004a99);
       color: white;
       padding: 25px;
       text-align: center;
     }
 
     nav {
-      background-color: #004a99;
+      background-color: #002b5c;
       padding: 12px;
       text-align: center;
     }
@@ -46,7 +46,7 @@
 
     h2 {
       margin-top: 40px;
-      color: #002b5c; /* mörkblå rubriker */
+      color: #002b5c;
     }
 
     table {
@@ -97,59 +97,100 @@
     <p><strong>Svenska Cupen:</strong> 8</p>
   </div>
 
-  <!-- MÅLVAKTER (2) -->
+  <!-- MÅLVAKTER -->
   <h2>Målvakter</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Jonathan Rasheed</td><td>Norge</td></tr>
-    <tr><td>Elis Bishesari</td><td>Sverige</td></tr>
+    <tr>
+      <th>Namn</th>
+      <th>Land</th>
+      <th>Född</th>
+      <th>Ålder</th>
+    </tr>
+    <tr><td>Jonathan Rasheed</td><td>Norge</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>Elis Bishesari</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
   </table>
 
-  <!-- FÖRSVARARE (9) -->
+  <!-- FÖRSVARARE -->
   <h2>Försvarare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>August Erlingmark</td><td>Sverige</td></tr>
-    <tr><td>Rockson Yeboah</td><td>Ghana</td></tr>
-    <tr><td>Jonas Bager</td><td>Danmark</td></tr>
-    <tr><td>Alexander Jallow</td><td>Sverige</td></tr>
-    <tr><td>Felix Eriksson</td><td>Sverige</td></tr>
-    <tr><td>Gabriel Ersoy</td><td>Sverige</td></tr>
-    <tr><td>Noah Tolf</td><td>Sverige</td></tr>
-    <tr><td>Thomas Santos</td><td>Danmark</td></tr>
+    <tr>
+      <th>Namn</th>
+      <th>Land</th>
+      <th>Född</th>
+      <th>Ålder</th>
+    </tr>
+    <tr><td>August Erlingmark</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>Rockson Yeboah</td><td>Ghana</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>Jonas Bager</td><td>Danmark</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>Alexander Jallow</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>Felix Eriksson</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>Gabriel Ersoy</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>Noah Tolf</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>Thomas Santos</td><td>Danmark</td><td data-birth=""></td><td class="age"></td></tr>
   </table>
 
-  <!-- MITTFÄLTARE (9) -->
+  <!-- MITTFÄLTARE -->
   <h2>Mittfältare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Imam Jagne</td><td>Sverige</td></tr>
-    <tr><td>Ramon Pascal Lundqvist</td><td>Sverige</td></tr>
-    <tr><td>David Kruse</td><td>Danmark</td></tr>
-    <tr><td>Filip Ottosson</td><td>Sverige</td></tr>
-    <tr><td>Leo Radakovic</td><td>Sverige</td></tr>
-    <tr><td>Kolbeinn Thórdarson</td><td>Island</td></tr>
-    <tr><td>Abundance Salaou</td><td>Elfenbenskusten</td></tr>
-    <tr><td>Benjamin Brantlind</td><td>Sverige</td></tr>
-    <tr><td>Lucas Kåhed</td><td>Sverige</td></tr>
+    <tr>
+      <th>Namn</th>
+      <th>Land</th>
+      <th>Född</th>
+      <th>Ålder</th>
+    </tr>
+    <tr><td>Imam Jagne</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>Ramon Pascal Lundqvist</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>David Kruse</td><td>Danmark</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>Filip Ottosson</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>Leo Radakovic</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>Kolbeinn Thórdarson</td><td>Island</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>Abundance Salaou</td><td>Elfenbenskusten</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>Benjamin Brantlind</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>Lucas Kåhed</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
   </table>
 
-  <!-- ANFALLARE (8) -->
+  <!-- ANFALLARE -->
   <h2>Anfallare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Sebastian Clemmensen</td><td>Danmark</td></tr>
-    <tr><td>Max Fenger</td><td>Danmark</td></tr>
-    <tr><td>Saidou Alioum</td><td>Kamerun</td></tr>
-    <tr><td>Tobias Heintz</td><td>Norge</td></tr>
-    <tr><td>Arbnor Mucolli</td><td>Albanien</td></tr>
-    <tr><td>Alfons Borén</td><td>Sverige</td></tr>
-    <tr><td>Tiago Coimbra</td><td>Kanada</td></tr>
-    <tr><td>Vilmer Tyrén</td><td>Sverige</td></tr>
-
+    <tr>
+      <th>Namn</th>
+      <th>Land</th>
+      <th>Född</th>
+      <th>Ålder</th>
+    </tr>
+    <tr><td>Sebastian Clemmensen</td><td>Danmark</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>Max Fenger</td><td>Danmark</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>Saidou Alioum</td><td>Kamerun</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>Tobias Heintz</td><td>Norge</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>Arbnor Mucolli</td><td>Albanien</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>Alfons Borén</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>Tiago Coimbra</td><td>Kanada</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><td>Vilmer Tyrén</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
   </table>
 
 </main>
+
+<script>
+  function calculateAge(birthDate) {
+    const today = new Date();
+    const birth = new Date(birthDate);
+    let age = today.getFullYear() - birth.getFullYear();
+    const m = today.getMonth() - birth.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) {
+      age--;
+    }
+    return age;
+  }
+
+  document.querySelectorAll("td[data-birth]").forEach(cell => {
+    const birthDate = cell.getAttribute("data-birth");
+    if (birthDate) {
+      const ageCell = cell.nextElementSibling;
+      ageCell.textContent = calculateAge(birthDate);
+      cell.textContent = birthDate;
+    }
+  });
+</script>
 
 </body>
 </html>
