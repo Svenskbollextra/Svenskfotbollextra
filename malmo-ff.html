@@ -14,9 +14,10 @@
       color: #111;
     }
 
+    /* Header: Vit -> Ljusblå */
     header {
-      background-color: #7ecbff; /* Malmö ljusblå */
-      color: white;
+      background: linear-gradient(to right, #ffffff, #7ecbff);
+      color: #0077b6;
       padding: 25px;
       text-align: center;
     }
@@ -46,7 +47,18 @@
 
     h2 {
       margin-top: 40px;
-      color: #0077b6; /* mörkare blå rubriker */
+      color: #0077b6;
+    }
+
+    /* Smal ljusblå stapel före rubriker */
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 20px;
+      background-color: #7ecbff;
+      margin-right: 10px;
+      vertical-align: middle;
     }
 
     table {
@@ -97,82 +109,99 @@
     <p><strong>Svenska Cupen:</strong> 16</p>
   </div>
 
-  <!-- MÅLVAKTER (4) -->
+  <!-- MÅLVAKTER -->
   <h2>Målvakter</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Ricardo Friedrich</td><td>Brasilien</td></tr>
-    <tr><td>Johan Dahlin</td><td>Sverige</td></tr>
-    <tr><td>Robin Olsen</td><td>Sverige</td></tr>
-    <tr><td>William Nieroth Lundgren</td><td>Sverige</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Ricardo Friedrich</td><td>Brasilien</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Johan Dahlin</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Robin Olsen</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>William Nieroth Lundgren</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
-  <!-- FÖRSVARARE (9) -->
+  <!-- FÖRSVARARE -->
   <h2>Försvarare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Johan Karlsson</td><td>Sverige</td></tr>
-    <tr><td>Bleon Kurtulus</td><td>Sverige</td></tr>
-    <tr><td>Andrej Djuric</td><td>Montenegro</td></tr>
-    <tr><td>Jens Stryger Larsen</td><td>Danmark</td></tr>
-    <tr><td>Pontus Jansson</td><td>Sverige</td></tr>
-    <tr><td>Colin Rösler</td><td>Norge</td></tr>
-    <tr><td>Gabriel Busanello</td><td>Brasilien</td></tr>
-    <tr><td>Malte Frejd Pålsson</td><td>Sverige</td></tr>
-    <tr><td>Sashwat Rana</td><td>Danmark</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Johan Karlsson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Bleon Kurtulus</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Andrej Djuric</td><td>Montenegro</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Jens Stryger Larsen</td><td>Danmark</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Pontus Jansson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Colin Rösler</td><td>Norge</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Gabriel Busanello</td><td>Brasilien</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Malte Frejd Pålsson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Sashwat Rana</td><td>Danmark</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
-  <!-- MITTFÄLTARE (16) -->
+  <!-- MITTFÄLTARE -->
   <h2>Mittfältare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Yanis Karabelyov</td><td>Bulgarien</td></tr>
-    <tr><td>Otto Rosengren</td><td>Sverige</td></tr>
-    <tr><td>Arnór Sigurdsson</td><td>Island</td></tr>
-    <tr><td>Anders Christiansen</td><td>Danmark</td></tr>
-    <tr><td>Stefano Vecchia</td><td>Sverige</td></tr>
-    <tr><td>Taha Ali</td><td>Sverige</td></tr>
-    <tr><td>Lasse Berg Johnsen</td><td>Norge</td></tr>
-    <tr><td>Jovan Milosavljevic</td><td>Serbien</td></tr>
-    <tr><td>Sead Haksabanovic</td><td>Sverige</td></tr>
-    <tr><td>Zakaria Loukili</td><td>Sverige</td></tr>
-    <tr><td>Adrian Skogmar</td><td>Sverige</td></tr>
-    <tr><td>Kenan Busuladzic</td><td>Sverige</td></tr>
-    <tr><td>Gentian Lajqi</td><td>Sverige</td></tr>
-    <tr><td>Theodor Lundbergh</td><td>Sverige</td></tr>
-    <tr><td>Anton Höög</td><td>Sverige</td></tr>
-    <tr><td>Viggo Jeppsson</td><td>Sverige</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Yanis Karabelyov</td><td>Bulgarien</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Otto Rosengren</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Arnór Sigurdsson</td><td>Island</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Anders Christiansen</td><td>Danmark</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Stefano Vecchia</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Taha Ali</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Lasse Berg Johnsen</td><td>Norge</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Jovan Milosavljevic</td><td>Serbien</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Sead Haksabanovic</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Zakaria Loukili</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Adrian Skogmar</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Kenan Busuladzic</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Gentian Lajqi</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Theodor Lundbergh</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Anton Höög</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Viggo Jeppsson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
-  <!-- ANFALLARE (5) -->
+  <!-- ANFALLARE -->
   <h2>Anfallare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Emmanuel Ekong</td><td>Sverige</td></tr>
-    <tr><td>Erik Botheim</td><td>Norge</td></tr>
-    <tr><td>Daniel Gudjohnsen</td><td>Island</td></tr>
-    <tr><td>Antonio Palac</td><td>Sverige</td></tr>
-    <tr><td>Alexandru Ghita</td><td>Sverige</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Emmanuel Ekong</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Erik Botheim</td><td>Norge</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Daniel Gudjohnsen</td><td>Island</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Antonio Palac</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Alexandru Ghita</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
-  <!-- UTLÅNADE (4) -->
+  <!-- UTLÅNADE -->
   <h2>Utlånade</h2>
   <table>
     <tr>
-      <th>Namn</th>
-      <th>Land</th>
-      <th>Position</th>
-      <th>Utlånad till</th>
+      <th>Namn</th><th>Land</th><th>Position</th><th>Utlånad till</th><th>Född</th><th>Ålder</th>
     </tr>
-
-    <tr><td>Hugo Bolin</td><td>Sverige</td><td>Mittfältare</td><td>Borussia Mönchengladbach(Köpoption)</td></tr>
-    <tr><td>Joakim Persson</td><td>Sverige</td><td>Målvakt</td><td>BK Olympic</td></tr>
-    <tr><td>Salifou Soumah</td><td>Guinea</td><td>Anfallare</td><td>RKS Radomiak Radom(Köpoption)</td></tr>
-    <tr><td>Sebastian Jörgensen</td><td>Danmark</td><td>Mittfältare</td><td>AGF Århus(Köpoption)</td></tr>
-
+    <tr><td>Hugo Bolin</td><td>Sverige</td><td>Mittfältare</td><td>Borussia Mönchengladbach(Köpoption)</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Joakim Persson</td><td>Sverige</td><td>Målvakt</td><td>BK Olympic</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Salifou Soumah</td><td>Guinea</td><td>Anfallare</td><td>RKS Radomiak Radom(Köpoption)</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Sebastian Jörgensen</td><td>Danmark</td><td>Mittfältare</td><td>AGF Århus(Köpoption)</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
 </main>
+
+<script>
+function calculateAge(birthDate) {
+  if (birthDate.trim() === "") return "";
+  const today = new Date();
+  const birth = new Date(birthDate);
+  let age = today.getFullYear() - birth.getFullYear();
+  if (today.getMonth() < birth.getMonth() ||
+     (today.getMonth() === birth.getMonth() && today.getDate() < birth.getDate())) {
+    age--;
+  }
+  return age;
+}
+
+document.querySelectorAll("table tr").forEach(row => {
+  const birthCell = row.querySelector(".birth");
+  const ageCell = row.querySelector(".age");
+  if (birthCell && ageCell) {
+    ageCell.textContent = calculateAge(birthCell.textContent);
+  }
+});
+</script>
 
 </body>
 </html>
