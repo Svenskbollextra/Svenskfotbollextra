@@ -14,21 +14,22 @@
       color: #111;
     }
 
+    /* Gul -> Svart header */
     header {
-      background-color: #ffd700; /* Mjällby gul */
+      background: linear-gradient(to right, #ffd700, #000000);
       color: black;
       padding: 25px;
       text-align: center;
     }
 
     nav {
-      background-color: #222; /* svart */
+      background-color: #000;
       padding: 12px;
       text-align: center;
     }
 
     nav a {
-      color: white;
+      color: #ffd700;
       text-decoration: none;
       font-weight: bold;
       margin: 0 15px;
@@ -46,7 +47,18 @@
 
     h2 {
       margin-top: 40px;
-      color: #222; /* svart rubrik */
+      color: #000;
+    }
+
+    /* Smal gul stapel */
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 20px;
+      background-color: #ffd700;
+      margin-right: 10px;
+      vertical-align: middle;
     }
 
     table {
@@ -97,78 +109,97 @@
     <p><strong>Svenska Cupen:</strong> 0</p>
   </div>
 
-  <!-- MÅLVAKTER (5) -->
+  <!-- MÅLVAKTER -->
   <h2>Målvakter</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Alexander Lundin</td><td>Sverige</td></tr>
-    <tr><td>Amar Dzevlan</td><td>Sverige</td></tr>
-    <tr><td>Hugo Fagerberg</td><td>Sverige</td></tr>
-    <tr><td>Melker Ahlstrand</td><td>Sverige</td></tr>
-    <tr><td>Robin Wallinder</td><td>Sverige</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Alexander Lundin</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Amar Dzevlan</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Hugo Fagerberg</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Melker Ahlstrand</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Robin Wallinder</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
-  <!-- FÖRSVARARE (11) -->
+  <!-- FÖRSVARARE -->
   <h2>Försvarare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Ludvig Svanberg</td><td>Sverige</td></tr>
-    <tr><td>Christian Tchouante</td><td>Kamerun</td></tr>
-    <tr><td>Axel Norén</td><td>Sverige</td></tr>
-    <tr><td>Abdullah Iqbal</td><td>Pakistan</td></tr>
-    <tr><td>Timo Stavitski</td><td>Finland</td></tr>
-    <tr><td>Elliot Stroud</td><td>Sverige</td></tr>
-    <tr><td>Tom Pettersson</td><td>Sverige</td></tr>
-    <tr><td>Ludvig Tidstrand</td><td>Sverige</td></tr>
-    <tr><td>Tony Miettinen</td><td>Finland</td></tr>
-    <tr><td>Filip Åkesson Linderoth</td><td>Sverige</td></tr>
-    <tr><td>Max Nielsen</td><td>Danmark</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Ludvig Svanberg</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Christian Tchouante</td><td>Kamerun</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Axel Norén</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Abdullah Iqbal</td><td>Pakistan</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Timo Stavitski</td><td>Finland</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Elliot Stroud</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Tom Pettersson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Ludvig Tidstrand</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Tony Miettinen</td><td>Finland</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Filip Åkesson Linderoth</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Max Nielsen</td><td>Danmark</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
-  <!-- MITTFÄLTARE (10) -->
+  <!-- MITTFÄLTARE -->
   <h2>Mittfältare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Ludwig Malachowski Thorell</td><td>Sverige</td></tr>
-    <tr><td>Viktor Gustafson</td><td>Sverige</td></tr>
-    <tr><td>Jeppe Kjaer</td><td>Norge</td></tr>
-    <tr><td>Måns Isaksson</td><td>Sverige</td></tr>
-    <tr><td>Jesper Gustavsson</td><td>Sverige</td></tr>
-    <tr><td>Romeo Leandersson</td><td>Sverige</td></tr>
-    <tr><td>Kimmen Nennesson</td><td>Sverige</td></tr>
-    <tr><td>Olle Lindberg</td><td>Sverige</td></tr>
-    <tr><td>Teo Helge</td><td>Sverige</td></tr>
-    <tr><td>Villiam Granath</td><td>Sverige</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Ludwig Malachowski Thorell</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Viktor Gustafson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Jeppe Kjaer</td><td>Norge</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Måns Isaksson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Jesper Gustavsson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Romeo Leandersson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Kimmen Nennesson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Olle Lindberg</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Teo Helge</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Villiam Granath</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
-  <!-- ANFALLARE (8) -->
+  <!-- ANFALLARE -->
   <h2>Anfallare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Bork Bang-Kittilsen</td><td>Norge</td></tr>
-    <tr><td>Jacob Bergström</td><td>Sverige</td></tr>
-    <tr><td>Abdoulie Manneh</td><td>Gambia</td></tr>
-    <tr><td>Olle Nilsson Lööf</td><td>Sverige</td></tr>
-    <tr><td>Ibrahim Adewale</td><td>Nigeria</td></tr>
-    <tr><td>Isac Johnsson</td><td>Sverige</td></tr>
-    <tr><td>Zebedee Kennedy</td><td>Sverige</td></tr>
-    <tr><td>Áki Samuelsen</td><td>Färöarna</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Bork Bang-Kittilsen</td><td>Norge</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Jacob Bergström</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Abdoulie Manneh</td><td>Gambia</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Olle Nilsson Lööf</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Ibrahim Adewale</td><td>Nigeria</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Isac Johnsson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Zebedee Kennedy</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Áki Samuelsen</td><td>Färöarna</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
-  <!-- UTLÅNADE (2) -->
+  <!-- UTLÅNADE -->
   <h2>Utlånade</h2>
   <table>
     <tr>
-      <th>Namn</th>
-      <th>Land</th>
-      <th>Position</th>
-      <th>Utlånad till</th>
+      <th>Namn</th><th>Land</th><th>Position</th><th>Utlånad till</th><th>Född</th><th>Ålder</th>
     </tr>
-    <tr><td>Manasse Kusu</td><td>Sverige</td><td>Mittfältare</td><td>Örebro SK</td></tr>
-    <tr><td>Liam Svensson</td><td>Sverige</td><td>Försvarare</td><td>Skövde AIK</td></tr>
+    <tr><td>Manasse Kusu</td><td>Sverige</td><td>Mittfältare</td><td>Örebro SK</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Liam Svensson</td><td>Sverige</td><td>Försvarare</td><td>Skövde AIK</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
 </main>
+
+<script>
+function calculateAge(birthDate) {
+  if (birthDate.trim() === "") return "";
+  const today = new Date();
+  const birth = new Date(birthDate);
+  let age = today.getFullYear() - birth.getFullYear();
+  if (today.getMonth() < birth.getMonth() ||
+     (today.getMonth() === birth.getMonth() && today.getDate() < birth.getDate())) {
+    age--;
+  }
+  return age;
+}
+
+document.querySelectorAll("table tr").forEach(row => {
+  const birthCell = row.querySelector(".birth");
+  const ageCell = row.querySelector(".age");
+  if (birthCell && ageCell) {
+    ageCell.textContent = calculateAge(birthCell.textContent);
+  }
+});
+</script>
 
 </body>
 </html>
