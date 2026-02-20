@@ -45,11 +45,20 @@
     }
 
     h2 {
+      display: flex;
+      align-items: center;
       margin-top: 40px;
-      color: white;
-      padding: 10px;
-      background-color: #002147; /* mörkblå stapel */
-      border-radius: 5px;
+      font-size: 20px;
+      color: #002147;
+    }
+
+    h2 span.stapel {
+      display: inline-block;
+      width: 10px;
+      height: 20px;
+      background-color: #ff0000; /* röd stapel */
+      margin-right: 10px;
+      border-radius: 2px;
     }
 
     table {
@@ -101,7 +110,7 @@
   </div>
 
   <!-- MÅLVAKTER -->
-  <h2>Målvakter</h2>
+  <h2><span class="stapel"></span>Målvakter</h2>
   <table>
     <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
     <tr><td>Mathias Nilsson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
@@ -110,7 +119,7 @@
   </table>
 
   <!-- FÖRSVARARE -->
-  <h2>Försvarare</h2>
+  <h2><span class="stapel"></span>Försvarare</h2>
   <table>
     <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
     <tr><td>Michael Parker</td><td>England</td><td class="birth"></td><td class="age"></td></tr>
@@ -126,7 +135,7 @@
   </table>
 
   <!-- MITTFÄLTARE -->
-  <h2>Mittfältare</h2>
+  <h2><span class="stapel"></span>Mittfältare</h2>
   <table>
     <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
     <tr><td>Charlie Vindehall</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
@@ -139,7 +148,7 @@
   </table>
 
   <!-- ANFALLARE -->
-  <h2>Anfallare</h2>
+  <h2><span class="stapel"></span>Anfallare</h2>
   <table>
     <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
     <tr><td>Liam Andersson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
@@ -152,7 +161,7 @@
   </table>
 
   <!-- UTLÅNADE -->
-  <h2>Utlånade spelare</h2>
+  <h2><span class="stapel"></span>Utlånade spelare</h2>
   <table>
     <tr><th>Namn</th><th>Position</th><th>Land</th><th>Född</th><th>Ålder</th><th>Utlånad till</th></tr>
     <tr><td>Philip Bergqvist</td><td>Mittfältare</td><td>Sverige</td><td class="birth"></td><td class="age"></td><td>Torslanda IK</td></tr>
@@ -161,7 +170,6 @@
 </main>
 
 <script>
-  // Automatisk ålder
   const today = new Date();
   document.querySelectorAll('tr').forEach(row => {
     const birthCell = row.querySelector('.birth');
