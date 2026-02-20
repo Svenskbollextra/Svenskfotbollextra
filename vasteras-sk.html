@@ -14,17 +14,19 @@
       color: #111;
     }
 
+    /* Grön -> Vit header */
     header {
-      background-color: #007f3f; /* Västerås grön */
-      color: white;
+      background: linear-gradient(to right, #007f3f, #ffffff);
+      color: #007f3f;
       padding: 25px;
       text-align: center;
     }
 
     nav {
-      background-color: #ffffff; /* vit */
+      background-color: #ffffff;
       padding: 12px;
       text-align: center;
+      border-bottom: 2px solid #007f3f;
     }
 
     nav a {
@@ -46,7 +48,18 @@
 
     h2 {
       margin-top: 40px;
-      color: #007f3f; /* grön rubrik */
+      color: #007f3f;
+    }
+
+    /* Smal grön stapel */
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 20px;
+      background-color: #007f3f;
+      margin-right: 10px;
+      vertical-align: middle;
     }
 
     table {
@@ -97,55 +110,77 @@
     <p><strong>Svenska Cupen:</strong> 0</p>
   </div>
 
-  <!-- MÅLVAKTER (3) -->
+  <!-- MÅLVAKTER -->
   <h2>Målvakter</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Anton Fagerström</td><td>Sverige</td></tr>
-    <tr><td>Andre Bernardini</td><td>Brasilien</td></tr>
-    <tr><td>Elis Jäger</td><td>Sverige</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Anton Fagerström</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Andre Bernardini</td><td>Brasilien</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Elis Jäger</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
-  <!-- FÖRSVARARE (9) -->
+  <!-- FÖRSVARARE -->
   <h2>Försvarare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Herman Magnusson</td><td>Sverige</td></tr>
-    <tr><td>Philip Bonde</td><td>Sverige</td></tr>
-    <tr><td>Frédéric Nsabiyumva</td><td>Burundi</td></tr>
-    <tr><td>Victor Wernersson</td><td>Sverige</td></tr>
-    <tr><td>Jack Tagesson</td><td>Sverige</td></tr>
-    <tr><td>Leonardo Caspari Bark</td><td>Sverige</td></tr>
-    <tr><td>Liiban Abdirahman Abadid</td><td>Norge</td></tr>
-    <tr><td>Marcus Baggesen</td><td>Danmark</td></tr>
-    <tr><td>Melvin Ljungqvist</td><td>Sverige</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Herman Magnusson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Philip Bonde</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Frédéric Nsabiyumva</td><td>Burundi</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Victor Wernersson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Jack Tagesson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Leonardo Caspari Bark</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Liiban Abdirahman Abadid</td><td>Norge</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Marcus Baggesen</td><td>Danmark</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Melvin Ljungqvist</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
-  <!-- MITTFÄLTARE (9) -->
+  <!-- MITTFÄLTARE -->
   <h2>Mittfältare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Karl Gunnarsson</td><td>Sverige</td></tr>
-    <tr><td>Mamadou Ousmane Diagne</td><td>Senegal</td></tr>
-    <tr><td>Simon Gefvert</td><td>Sverige</td></tr>
-    <tr><td>Jens Magnusson</td><td>Sverige</td></tr>
-    <tr><td>Mattias Hellisdal</td><td>Färöarna</td></tr>
-    <tr><td>Musab Abdi Mohamud</td><td>Sverige</td></tr>
-    <tr><td>Jonathan Ring</td><td>Sverige</td></tr>
-    <tr><td>Levi Hansas</td><td>Sverige</td></tr>
-    <tr><td>Lucas Sibelius</td><td>Sverige</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Karl Gunnarsson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Mamadou Ousmane Diagne</td><td>Senegal</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Simon Gefvert</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Jens Magnusson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Mattias Hellisdal</td><td>Färöarna</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Musab Abdi Mohamud</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Jonathan Ring</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Levi Hansas</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Lucas Sibelius</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
-  <!-- ANFALLARE (3) -->
+  <!-- ANFALLARE -->
   <h2>Anfallare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Mikkel Ladefoged</td><td>Danmark</td></tr>
-    <tr><td>Axel Taonsa</td><td>Elfenbenskusten</td></tr>
-    <tr><td>Moussa Diallo</td><td>Senegal</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Mikkel Ladefoged</td><td>Danmark</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Axel Taonsa</td><td>Elfenbenskusten</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Moussa Diallo</td><td>Senegal</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
 </main>
+
+<script>
+function calculateAge(birthDate) {
+  if (birthDate.trim() === "") return "";
+  const today = new Date();
+  const birth = new Date(birthDate);
+  let age = today.getFullYear() - birth.getFullYear();
+  if (today.getMonth() < birth.getMonth() ||
+     (today.getMonth() === birth.getMonth() && today.getDate() < birth.getDate())) {
+    age--;
+  }
+  return age;
+}
+
+document.querySelectorAll("table tr").forEach(row => {
+  const birthCell = row.querySelector(".birth");
+  const ageCell = row.querySelector(".age");
+  if (birthCell && ageCell) {
+    ageCell.textContent = calculateAge(birthCell.textContent);
+  }
+});
+</script>
 
 </body>
 </html>
