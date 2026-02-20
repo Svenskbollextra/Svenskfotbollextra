@@ -15,14 +15,14 @@
     }
 
     header {
-      background-color: #b30000; /* Kalmar röd */
+      background: linear-gradient(to right, #cc0000, #800000); /* röd gradient */
       color: white;
       padding: 25px;
       text-align: center;
     }
 
     nav {
-      background-color: #e60000;
+      background-color: #800000;
       padding: 12px;
       text-align: center;
     }
@@ -46,7 +46,18 @@
 
     h2 {
       margin-top: 40px;
-      color: #b30000; /* röda rubriker */
+      color: #b30000;
+    }
+
+    /* Smal röd stapel */
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 20px;
+      background-color: #b30000;
+      margin-right: 10px;
+      vertical-align: middle;
     }
 
     table {
@@ -97,53 +108,53 @@
     <p><strong>Svenska Cupen:</strong> 3</p>
   </div>
 
-  <!-- MÅLVAKTER (2) -->
+  <!-- MÅLVAKTER -->
   <h2>Målvakter</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Samuel Brolin</td><td>Sverige</td></tr>
-    <tr><td>Jakob Kindberg</td><td>Sverige</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Samuel Brolin</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Jakob Kindberg</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
-  <!-- FÖRSVARARE (8) -->
+  <!-- FÖRSVARARE -->
   <h2>Försvarare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Victor Larsson</td><td>Sverige</td></tr>
-    <tr><td>Sivert Øverby</td><td>Norge</td></tr>
-    <tr><td>Rony Jansson</td><td>Finland</td></tr>
-    <tr><td>Zakarias Råvik</td><td>Sverige</td></tr>
-    <tr><td>Sodiq Lawal</td><td>Nigeria</td></tr>
-    <tr><td>Arvin Davoudi-Kia</td><td>Sverige</td></tr>
-    <tr><td>Lars Saetra</td><td>Norge</td></tr>
-    <tr><td>Aboubacar Keita</td><td>USA</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Victor Larsson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Sivert Øverby</td><td>Norge</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Rony Jansson</td><td>Finland</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Zakarias Råvik</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Sodiq Lawal</td><td>Nigeria</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Arvin Davoudi-Kia</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Lars Saetra</td><td>Norge</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Aboubacar Keita</td><td>USA</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
-  <!-- MITTFÄLTARE (6) -->
+  <!-- MITTFÄLTARE -->
   <h2>Mittfältare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Melker Hallberg</td><td>Sverige</td></tr>
-    <tr><td>Nassef Chourak</td><td>Holland</td></tr>
-    <tr><td>Awaka Djoro</td><td>Elfenbenskusten</td></tr>
-    <tr><td>Carl Gustafsson</td><td>Sverige</td></tr>
-    <tr><td>Abdussalam Magashy</td><td>Nigeria</td></tr>
-    <tr><td>Robert Gojani</td><td>Sverige</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Melker Hallberg</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Nassef Chourak</td><td>Holland</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Awaka Djoro</td><td>Elfenbenskusten</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Carl Gustafsson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Abdussalam Magashy</td><td>Nigeria</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Robert Gojani</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
-  <!-- ANFALLARE (6) -->
+  <!-- ANFALLARE -->
   <h2>Anfallare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th></tr>
-    <tr><td>Isaac Atanga</td><td>Ghana</td></tr>
-    <tr><td>Malcolm Stolt</td><td>Sverige</td></tr>
-    <tr><td>Anthony Olusanya</td><td>Finland</td></tr>
-    <tr><td>Charles Sagoe Jr</td><td>England</td></tr>
-    <tr><td>Abdi Sabriye</td><td>Sverige</td></tr>
-    <tr><td>Emeka Nnamani</td><td>Danmark</td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Född</th><th>Ålder</th></tr>
+    <tr><td>Isaac Atanga</td><td>Ghana</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Malcolm Stolt</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Anthony Olusanya</td><td>Finland</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Charles Sagoe Jr</td><td>England</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Abdi Sabriye</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Emeka Nnamani</td><td>Danmark</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
-  <!-- UTLÅNADE (4) -->
+  <!-- UTLÅNADE -->
   <h2>Utlånade</h2>
   <table>
     <tr>
@@ -151,39 +162,39 @@
       <th>Land</th>
       <th>Position</th>
       <th>Utlånad till</th>
+      <th>Född</th>
+      <th>Ålder</th>
     </tr>
 
-    <tr>
-      <td>Casper Andersson</td>
-      <td>Sverige</td>
-      <td>Målvakt</td>
-      <td>FK Karlskrona</td>
-    </tr>
-
-    <tr>
-      <td>Ville Nilsson</td>
-      <td>Sverige</td>
-      <td>Anfallare</td>
-      <td>FK Karlskrona</td>
-    </tr>
-
-    <tr>
-      <td>William Andersson</td>
-      <td>Sverige</td>
-      <td>Mittfältare</td>
-      <td>FK Karlskrona</td>
-    </tr>
-
-    <tr>
-      <td>Wilmer Andersson</td>
-      <td>Sverige</td>
-      <td>Mittfältare</td>
-      <td>FK Karlskrona</td>
-    </tr>
-
+    <tr><td>Casper Andersson</td><td>Sverige</td><td>Målvakt</td><td>FK Karlskrona</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Ville Nilsson</td><td>Sverige</td><td>Anfallare</td><td>FK Karlskrona</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>William Andersson</td><td>Sverige</td><td>Mittfältare</td><td>FK Karlskrona</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Wilmer Andersson</td><td>Sverige</td><td>Mittfältare</td><td>FK Karlskrona</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
 </main>
+
+<script>
+function calculateAge(birthDate) {
+  if (birthDate.trim() === "") return "";
+  const today = new Date();
+  const birth = new Date(birthDate);
+  let age = today.getFullYear() - birth.getFullYear();
+  if (today.getMonth() < birth.getMonth() ||
+     (today.getMonth() === birth.getMonth() && today.getDate() < birth.getDate())) {
+    age--;
+  }
+  return age;
+}
+
+document.querySelectorAll("table tr").forEach(row => {
+  const birthCell = row.querySelector(".birth");
+  const ageCell = row.querySelector(".age");
+  if (birthCell && ageCell) {
+    ageCell.textContent = calculateAge(birthCell.textContent);
+  }
+});
+</script>
 
 </body>
 </html>
