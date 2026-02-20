@@ -22,7 +22,7 @@
     }
 
     nav {
-      background-color: #222;
+      background-color: #000000;
       padding: 12px;
       text-align: center;
     }
@@ -45,19 +45,20 @@
     }
 
     h2 {
-      display: flex;
-      align-items: center;
       margin-top: 40px;
-      color: #002147; /* mörkblå rubrik */
+      position: relative;
+      color: #002147;
     }
 
+    /* Smal vertikal stapel före rubriker */
     h2::before {
       content: '';
       display: inline-block;
-      width: 20px;
-      height: 20px;
+      width: 6px;          /* smal stapel */
+      height: 20px;        /* höjd på stapeln */
       background-color: #002147;
       margin-right: 10px;
+      vertical-align: middle;
     }
 
     table {
@@ -111,80 +112,83 @@
   <!-- MÅLVAKTER -->
   <h2>Målvakter</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th><th>Födelsedatum</th><th>Ålder</th></tr>
-    <tr><td>Ismael Diawara</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>David Celic</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><th>Namn</th><th>Land</th><th class="birth">Född</th><th>Ålder</th></tr>
+    <tr><td>Ismael Diawara</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>David Celic</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
   <!-- FÖRSVARARE -->
   <h2>Försvarare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th><th>Födelsedatum</th><th>Ålder</th></tr>
-    <tr><td>Bogdan Milovanov</td><td>Ukraina</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>Tobias Anker</td><td>Danmark</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>Henrik Rönnlöf Castegren</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>Isaac Yawe Höök</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>Simon Sandberg</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>Victor Ekström</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>Oscar Krusnell</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>Ben Magnusson</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>Mohamed Soumah</td><td>Guinea</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><th>Namn</th><th>Land</th><th class="birth">Född</th><th>Ålder</th></tr>
+    <tr><td>Bogdan Milovanov</td><td>Ukraina</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Tobias Anker</td><td>Danmark</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Henrik Rönnlöf Castegren</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Isaac Yawe Höök</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Simon Sandberg</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Victor Ekström</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Oscar Krusnell</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Ben Magnusson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Mohamed Soumah</td><td>Guinea</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
   <!-- MITTFÄLTARE -->
   <h2>Mittfältare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th><th>Födelsedatum</th><th>Ålder</th></tr>
-    <tr><td>Marcus Lindberg</td><td>Danmark</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>Matthias Nartey</td><td>Holland</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>Melker Heier</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>Victor Svensson</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>Hugo Andersson Mella</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>Michael Martin</td><td>Tyskland</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><th>Namn</th><th>Land</th><th class="birth">Född</th><th>Ålder</th></tr>
+    <tr><td>Marcus Lindberg</td><td>Danmark</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Matthias Nartey</td><td>Holland</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Melker Heier</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Victor Svensson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Hugo Andersson Mella</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Michael Martin</td><td>Tyskland</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
   <!-- ANFALLARE -->
   <h2>Anfallare</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th><th>Födelsedatum</th><th>Ålder</th></tr>
-    <tr><td>Joakim Persson</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>Robbie Ure</td><td>Skottland</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>Isak Bjerkebo</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>Neo Jönsson</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>Noel Milleskog</td><td>Sverige</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>Finlay Neat</td><td>Skottland</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>Odera Samuel Onuchukwu Adindu</td><td>Nigeria</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><th>Namn</th><th>Land</th><th class="birth">Född</th><th>Ålder</th></tr>
+    <tr><td>Joakim Persson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Robbie Ure</td><td>Skottland</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Isak Bjerkebo</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Neo Jönsson</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Noel Milleskog</td><td>Sverige</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Finlay Neat</td><td>Skottland</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Odera Samuel Onuchukwu Adindu</td><td>Nigeria</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
   <!-- UTLÅNADE -->
   <h2>Utlånade</h2>
   <table>
-    <tr><th>Namn</th><th>Land</th><th>Position</th><th>Utlånad till</th><th>Födelsedatum</th><th>Ålder</th></tr>
-    <tr><td>Adam Vikman</td><td>Sverige</td><td>Mittfältare</td><td>Silkeborg(Köpoption)</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>André Alsanati</td><td>Sverige</td><td>Mittfältare</td><td>Duhok SC(Köpoption)</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>Andreas Pyndt</td><td>Danmark</td><td>Mittfältare</td><td>FC Fredericia(Köpoption)</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>August Ljungberg</td><td>Sverige</td><td>Anfallare</td><td>Egersunds IK</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>Leo Walta</td><td>Finland</td><td>Mittfältare</td><td>Swansea(Köpoption)</td><td data-birth=""></td><td class="age"></td></tr>
-    <tr><td>Saba Mamatsashvili</td><td>Georgien</td><td>Försvarare</td><td>FK Zalgiris Vilnius(Köpoption)</td><td data-birth=""></td><td class="age"></td></tr>
+    <tr><th>Namn</th><th>Land</th><th>Position</th><th>Utlånad till</th><th class="birth">Född</th><th>Ålder</th></tr>
+    <tr><td>Adam Vikman</td><td>Sverige</td><td>Mittfältare</td><td>Silkeborg(Köpoption)</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>André Alsanati</td><td>Sverige</td><td>Mittfältare</td><td>Duhok SC(Köpoption)</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Andreas Pyndt</td><td>Danmark</td><td>Mittfältare</td><td>FC Fredericia(Köpoption)</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>August Ljungberg</td><td>Sverige</td><td>Anfallare</td><td>Egersunds IK</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Leo Walta</td><td>Finland</td><td>Mittfältare</td><td>Swansea(Köpoption)</td><td class="birth"></td><td class="age"></td></tr>
+    <tr><td>Saba Mamatsashvili</td><td>Georgien</td><td>Försvarare</td><td>FK Zalgiris Vilnius(Köpoption)</td><td class="birth"></td><td class="age"></td></tr>
   </table>
 
 </main>
 
 <script>
 function calculateAge(birthDate) {
+  if (birthDate.trim() === "") return "";
   const today = new Date();
   const birth = new Date(birthDate);
   let age = today.getFullYear() - birth.getFullYear();
-  const m = today.getMonth() - birth.getMonth();
-  if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) age--;
+  if (today.getMonth() < birth.getMonth() || 
+      (today.getMonth() === birth.getMonth() && today.getDate() < birth.getDate())) {
+    age--;
+  }
   return age;
 }
 
-document.querySelectorAll("td[data-birth]").forEach(cell => {
-  const birthDate = cell.getAttribute("data-birth");
-  const ageCell = cell.nextElementSibling;
-  if (birthDate && ageCell && ageCell.classList.contains("age")) {
-    ageCell.textContent = calculateAge(birthDate);
+document.querySelectorAll("table tr").forEach(row => {
+  const birthCell = row.querySelector(".birth");
+  const ageCell = row.querySelector(".age");
+  if (birthCell && ageCell) {
+    ageCell.textContent = calculateAge(birthCell.textContent);
   }
 });
 </script>
