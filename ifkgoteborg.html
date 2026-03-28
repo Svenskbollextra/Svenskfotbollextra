@@ -174,23 +174,23 @@
 </main>
 
 <script>
-  function calculateAge(birthDate) {
-    const today = new Date();
-    const birth = new Date(birthDate);
-    let age = today.getFullYear() - birth.getFullYear();
-    const m = today.getMonth() - birth.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) {
-      age--;
+ function calculateAge(birthDate) {
+  if (birthDate.trim() === "") return "";
+  const today = new Date();
+  const birth = new Date(birthDate);
+  let age = today.getFullYear() - birth.getFullYear();
+  if (today.getMonth() < birth.getMonth() || 
+      (today.getMonth() === birth.getMonth() && today.getDate() < birth.getDate())) {
+    age--;
     }
     return age;
   }
 
-  document.querySelectorAll("td[data-birth]").forEach(cell => {
-    const birthDate = cell.getAttribute("data-birth");
-    if (birthDate) {
-      const ageCell = cell.nextElementSibling;
-      ageCell.textContent = calculateAge(birthDate);
-      cell.textContent = birthDate;
+document.querySelectorAll("table tr").forEach(row => {
+  const birthCell = row.querySelector(".birth");
+  const ageCell = row.querySelector(".age");
+  if (birthCell && ageCell) {
+    ageCell.textContent = calculateAge(birthCell.textContent);
     }
   });
 </script>
